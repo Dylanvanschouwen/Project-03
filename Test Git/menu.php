@@ -9,9 +9,9 @@
 <body>
     <header>
         <ul>
-            <li><a href="./index.html">Homepagina</a></li>
-            <li><a href="./index1.html">Pagina van Amin</a></li>
-            <li><a href="./Github test.html">Pagina van Dylan</a></li>
+            <li><a href="./index.php">Homepagina</a></li>
+            <li><a href="./index1.php">Pagina van Amin</a></li>
+            <li><a href="./Github_test.php">Pagina van Dylan</a></li>
             <li><a href="./indexJ.php">Pagina van Jack</a></li>
         </ul>
     </header>

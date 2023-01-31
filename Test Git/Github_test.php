@@ -8,17 +8,13 @@
 </head>
 <body>
     <header>
+        <?php include "menu.php" ?>
         <h1>Github test voor project 03</h1>
-        <ul>
-            <li><a href="./index.html">Homepagina gemaakt door Jack</a></li>
-            <li><a href="./index1.html">Pagina van Amin</a></li>
-            <li><a href="./Github_test.php">Pagina van Dylan</a></li>
-        </ul>
     </header>
     <main>
     <?php
     date_default_timezone_set("Europe/Amsterdam"); 
-    echo "vandaag is het" . date ("D-m-y") . "<br>";?>
+    echo "de datum van vandaag is" . date ("D-m-y") . "<br>";?>
     </main>
 </body>
 </html>
