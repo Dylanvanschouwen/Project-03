@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github test</title>
+    <title>Git test</title>
 </head>
 <body>
     <header>
-        <h1>Github test voor project 03</h1>
         <ul>
             <li><a href="./index.html">Homepagina</a></li>
             <li><a href="./index1.html">Pagina van Amin</a></li>
@@ -16,7 +15,5 @@
             <li><a href="./indexJ.php">Pagina van Jack</a></li>
         </ul>
     </header>
-<h1> test 1234
-</h1>
 </body>
 </html>
