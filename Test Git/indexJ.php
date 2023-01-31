@@ -7,8 +7,9 @@
     <title>Github test</title>
 </head>
 <body>
-    <header>
+<header>
         <h1>Github test voor project 03</h1>
+        <h2>Deze pagina is gemaakt door Jack</h2>
         <ul>
             <li><a href="./index.html">Homepagina</a></li>
             <li><a href="./index1.html">Pagina van Amin</a></li>
@@ -18,7 +19,10 @@
     </header>
 
     <main>
-        <p>Dit was een github test voor project 03</p>
+        <?php
+        date_default_timezone_set("Europe/Amsterdam");
+        echo "De datum van vandaag is ", date("d F o");
+        ?>
     </main>
 
 </body>
