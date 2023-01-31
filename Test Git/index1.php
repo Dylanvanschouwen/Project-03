@@ -10,12 +10,14 @@
     <header>
         <h1>Github test voor project 03</h1>
         <ul>
-            <li><a href="./index.html">Homepagina gemaakt door Jack</a></li>
-            <li><a href="./index1.html">Pagina van Amin</a></li>
-            <li><a href="./Github_test.php">Pagina van Dylan</a></li>
+            <li>Home</li>
+            <li>Pagina van Amin</li>
+            <li>Pagina van Dylan</li>
+            <li>Pagina Jack</li>
         </ul>
     </header>
-
+    <?php
+    echo "Today is " . date("Y/m/d") . "<br>";?>
     <main>
         <p>Dit was een github test voor project 03</p>
         <p>Dit was een test</p>
