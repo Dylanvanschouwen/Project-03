@@ -10,11 +10,15 @@
     <header>
         <h1>Github test voor project 03</h1>
         <ul>
-            <li>Pagina van Amin</li>
-            <li>Pagina van Dylan</li>
+            <li><a href="./index.html">Homepagina gemaakt door Jack</a></li>
+            <li><a href="./index1.html">Pagina van Amin</a></li>
+            <li><a href="./Github_test.php">Pagina van Dylan</a></li>
         </ul>
     </header>
-<h1> test 1234
-</h1>
+    <main>
+    <?php
+    date_default_timezone_set("Europe/Amsterdam"); 
+    echo "vandaag is het" . date ("D-m-y") . "<br>";?>
+    </main>
 </body>
 </html>
