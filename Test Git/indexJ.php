@@ -11,14 +11,13 @@
         <h1>Github test voor project 03</h1>
         <h2>Deze pagina is gemaakt door Jack</h2>
         <?php
-        include "menu.php";
-        ?>
+        include "menu.php"; ?>
     </header>
 
     <main>
         <?php
         date_default_timezone_set("Europe/Amsterdam");
-        echo "De datum van vandaag is ", date("d F o");
+        echo "De datum van vandaag is", date("d F o");
         ?>
     </main>
 
