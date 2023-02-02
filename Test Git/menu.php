@@ -12,7 +12,7 @@
             <li><a href="./index.php">Homepagina</a></li>
             <li><a href="./index1.php">Pagina van Amin</a></li>
             <li><a href="./Github_test.php">Pagina van Dylan</a></li>
-            <li><a href="./indexJ.php">Pagina van Jack</a></li>
+            <li><a href="./Jack.php">Pagina van Jack</a></li>
         </ul>
     </header>
 </body>
