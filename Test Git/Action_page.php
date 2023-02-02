@@ -1,6 +1,7 @@
 <html>
 <?php 
-echo "<p> hello world </p>  <br>";
+date_default_timezone_set("Europe/Amsterdam");
+echo "De datum van vandaag is " . date ("D-m-y") . "<br>"; 
 /* print username */
 echo "Username:" . $_POST ["Uname"] . "<br>";
 //var_dump($_POST);

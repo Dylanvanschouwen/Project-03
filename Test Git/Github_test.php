@@ -14,7 +14,7 @@
     <main>
     <?php
     date_default_timezone_set("Europe/Amsterdam"); 
-    echo "de datum van vandaag is" . date ("D-m-y") . "<br>";?>
+    echo "de datum van vandaag is " . date ("D-m-y") . "<br>";?>
     </main>
     <form action="action_page.php" method="POST">
   <label for="fname">Username:</label><br>
