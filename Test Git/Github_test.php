@@ -16,5 +16,13 @@
     date_default_timezone_set("Europe/Amsterdam"); 
     echo "de datum van vandaag is" . date ("D-m-y") . "<br>";?>
     </main>
+    <form action="action_page.php" method="POST">
+  <label for="fname">Username:</label><br>
+  <input type="text" id="name" name="Uname" value="John"><br>
+  <label for="lname">Password:</label><br>
+  <input type="Password" id="name" name="Pname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 </body>
 </html>
