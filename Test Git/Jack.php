@@ -23,10 +23,10 @@
     <h2>HTML Forms</h2>
 
     <form action="action_page_Jack.php" method="POST">
-    <label for="username">Username</label><br>
-    <input type="text" id="username" name="username" value="John" minlength="5"><br>
-    <label for="password">Password</label><br>
-    <input type="password" id="password" name="password" value="Doe"><br><br>
+    <label for="username">Type your username:</label><br>
+    <input type="text" id="username" name="username" Placeholder="Username"><br>
+    <label for="password">Type your password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Password"><br><br>
     <input type="submit" value="Submit">
     </form> 
 
