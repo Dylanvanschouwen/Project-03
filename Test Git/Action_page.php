@@ -19,6 +19,9 @@ echo "de lengte van uname: $len";
 if ( $len < 5) {
     echo "<br>Username moet groter zijn dan 4 tekens <br>";
 }
+else if ($len > 10) {
+    echo "<br>Username moet kleiner zijn dan 10 tekens <br>";
+}
 //var_dump($_POST);//
 ?>
 </html>
