@@ -72,7 +72,7 @@ ul {
 }
 .list_onder a{
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     margin-right: 25px;
 }
 #categorie_dropdown {
@@ -87,3 +87,4 @@ ul {
     border: solid black 1px;
     border-radius: 10px;
 }
+
