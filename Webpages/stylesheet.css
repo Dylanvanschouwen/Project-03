@@ -3,3 +3,61 @@
     padding: 0;
     size: 0;
 }
+
+/* Homepage CCS code */
+.home_upper {
+    display: flex;
+    height: 40.5vh;
+}
+.home_uppercrap {
+    margin-left: 35vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+.home_uppercrap {
+    font-size: 40px;
+}
+.home_uppercrap p {
+    margin-top: 3vh;
+}
+.home_lower {
+    height: 40.5vh;
+    display: flex;
+    background-color: #DF0000;
+    color: white;
+}
+.home_lower a {
+    color: white;
+}
+.home_lowercrap {
+    margin-left: 35vw;
+    text-align: center;
+    margin-top: 5vh;
+    max-width: 60vw;
+}
+
+
+#home_IMGlogo {
+    position: absolute;
+    width: 25vw;
+    background-color: white;
+    border: 1px solid #DF0000;
+    border-radius: 50px;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+#home_IMGproduct {
+    position: absolute;
+    width: 25vw;
+    background-color: white;
+    border: 1px solid #DF0000;
+    border-radius: 50px;
+    margin-left: 5vw;
+    margin-top: 4vh;
+}
+.home_lowercrap {
+    font-size: 20px;
+}
+.home_lowercrap p {
+    margin-top: 3vh;
+}

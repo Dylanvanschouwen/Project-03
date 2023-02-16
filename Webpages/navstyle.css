@@ -135,3 +135,16 @@ ul {
     margin-left: 17.8vw;
     margin-top: 4.35vh;
 }
+
+
+
+footer {
+    top: 0;
+    display: flex;
+    background-color: green;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
