@@ -10,7 +10,6 @@
     background-color: #DF0000;
     height: 15vh;
 }
-
 #IMGlogo {
     position: absolute;
     width: 12vw;
@@ -22,7 +21,7 @@
 }
 #IMGcart {
     top: 0;
-    margin-top: 7.5px;
+    margin-top: 2vh;
     right: 0;
     position: absolute;
     width: 90px;
@@ -30,17 +29,19 @@
     border-radius: 50px;
     top: 0;
     border: solid white 2px;
+    margin-right: 4vw;
 }
 #IMGprofilepic {
     top: 0;
-    margin-top: 7.5px;
+    margin-top: 2vh;
     right: 0;
-    margin-right: 100px;
+    margin-right: 10vw;
     position: absolute;
     width: 90px;
     border-radius: 50px;
     border: solid white 2px;
 }
+
 
 a {
     text-decoration: none;
@@ -49,6 +50,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 
 .list_boven {
     display: flex;
@@ -67,24 +69,69 @@ ul {
 .list_onder {
     display: flex;
     flex-direction: row;
-    margin-left: 15vw;
-    margin-top: 3vh;
+    justify-content: center;
+    max-width: 100%;
+    height: 45px;
 }
-.list_onder a{
+.nav_onder {
+    justify-content: center;
+    display: flex;
+    margin-top: 3vh;
     color: white;
     font-size: 30px;
-    margin-right: 5vw;
 }
-#categorie_dropdown {
+.nav_onder a{
+    color: white;
+    font-size: 30px;
+}
+#searchbar {
+    height: 45px;
+    margin-left: 5vw;
+    width: 500px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+#personeel_btn {
+    margin-left: 5vw;
     display: flex;
     padding: 5px;
     border: solid white 2px;
     border-radius: 10px;
 }
-#searchbar {
-    width: 500px;
-    height: 45px;
-    border: solid black 1px;
-    border-radius: 10px;
-}
 
+/* Categories dropdown shit */
+.categorie_dropdown {
+    padding: 5px;
+    border: solid white 2px;
+    border-radius: 10px;
+    color: black;
+    padding-left: 30px;
+}
+.categorie_content {
+    display: none;
+}
+.categorie_content a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #DD4040;
+
+}
+.a_btn {
+    display: flex;
+}
+.categorie_dropdown:hover .categorie_content {
+    display: flex;
+    flex-direction: column;
+}
+.dYJqfl svg {
+    cursor: inherit;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    fill: currentcolor;
+    position: absolute;
+    color: white;
+    margin-left: 17.8vw;
+    margin-top: 4.35vh;
+}
