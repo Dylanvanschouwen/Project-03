@@ -8,13 +8,8 @@ include 'functions.php';
 // main
 
 // connect database bieren
-ConnectDb ();
+$conn = ConnectDb ();
 
 // print bieren
-OvzBieren();
-
-
-
-
-
+OvzBieren($conn);
 ?>
