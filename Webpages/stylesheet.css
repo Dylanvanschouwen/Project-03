@@ -5,6 +5,7 @@
 }
 
 /* Homepage CCS code */
+/* Upper side of homepage */
 .home_upper {
     display: flex;
     height: 40.5vh;
@@ -20,23 +21,35 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
+
+/* Lower side of homepage */
 .home_lower {
     height: 40.5vh;
     display: flex;
     background-color: #DF0000;
     color: white;
 }
-.home_lower a {
-    color: white;
-}
 .home_lowercrap {
-    margin-left: 35vw;
+    margin-left: 5vw;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     max-width: 60vw;
+    font-size: 20px;
+}
+.home_lowercrap p {
+    margin-top: 3vh;
+}
+.home_links {
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 2vh;
+    width: 13vw;
+    margin-left: 23vw;
 }
 
-
+/* Images CSS */
 #home_IMGlogo {
     position: absolute;
     width: 25vw;
@@ -53,12 +66,6 @@
     background-color: white;
     border: 1px solid #DF0000;
     border-radius: 50px;
-    margin-left: 5vw;
-    margin-top: 4vh;
-}
-.home_lowercrap {
-    font-size: 20px;
-}
-.home_lowercrap p {
-    margin-top: 3vh;
+    margin-left: 67vw;
+    margin-top: 2.3vh;
 }
