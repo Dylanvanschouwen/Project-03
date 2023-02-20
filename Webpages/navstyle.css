@@ -104,28 +104,48 @@ ul {
 
 /* Categories dropdown shit */
 .categorie_dropdown {
-    padding: 5px;
-    border: solid white 2px;
-    border-radius: 10px;
+    padding-top: 4px;
+    padding-right: 5px;
+    border: solid #DD4040 3px;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 35px;
+    font-weight: bold;
+}
+.categorie_dropdown a {
     color: black;
-    padding-left: 30px;
+    font-size: 28px;
 }
 .categorie_content {
     display: none;
 }
 .categorie_content a {
+    color: black;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #DD4040;
-
-}
-.a_btn {
+    background-color: white;
     display: flex;
+    z-index: 10;
+    height: 5vh;
+    border-bottom: solid #DD4040 2px;
+    border-left: solid #DD4040 2px;
+    border-right: solid #DD4040 2px;
+    font-weight: normal;
+}
+.a_btn_1 {
+    border-top: solid #DD4040 1px;
+}
+.a_btn_4 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .categorie_dropdown:hover .categorie_content {
     display: flex;
     flex-direction: column;
+    width: 18.35vw;
+    margin-top: 2px;
+    z-index: 10;
 }
 .dYJqfl svg {
     cursor: inherit;
@@ -134,7 +154,7 @@ ul {
     transform: rotate(0deg);
     fill: currentcolor;
     position: absolute;
-    color: white;
+    color: black;
     margin-left: 17.8vw;
     margin-top: 4.35vh;
 }
@@ -142,6 +162,7 @@ ul {
 
 /* Smaller pc screens media querie */
 @media only screen and (min-width: 1520px) {
+    /* Image CSS */
     #IMGcart {
         margin-top: 1vh;
         margin-right: 1vw;
@@ -151,6 +172,7 @@ ul {
         margin-right: 7.5vw;
     }
 
+    /* Lower side navbar fixes */
     #searchbar {
         margin-left: 2vw;
         width: 30vw;
@@ -164,6 +186,11 @@ ul {
     }
     .dYJqfl svg {
         margin-left: 13.9vw;
+    }
+
+    /* Dropdown fixes */
+    .categorie_content a {
+        z-index: 10;
     }
 }
 

@@ -45,6 +45,7 @@
     border-radius: 50px;
     margin-left: 5vw;
     margin-top: 10vh;
+    z-index: 2;
 }
 #home_IMGproduct {
     position: absolute;
