@@ -10,6 +10,8 @@
     background-color: #DF0000;
     height: 15vh;
 }
+
+/* IMG CSS */
 #IMGlogo {
     position: absolute;
     width: 12vw;
@@ -42,7 +44,7 @@
     border: solid white 2px;
 }
 
-
+/* General CSS */
 a {
     text-decoration: none;
     color: black;
@@ -51,7 +53,7 @@ ul {
     list-style-type: none;
 }
 
-
+/* Upper side navbar */
 .list_boven {
     display: flex;
     justify-content: space-around;
@@ -66,6 +68,7 @@ ul {
     margin-top: 15px;
 }
 
+/* Lower side navbar */
 .list_onder {
     display: flex;
     flex-direction: row;
@@ -137,7 +140,34 @@ ul {
 }
 
 
+/* Smaller pc screens media querie */
+@media only screen and (min-width: 1520px) {
+    #IMGcart {
+        margin-top: 1vh;
+        margin-right: 1vw;
+    }
+    #IMGprofilepic {
+        margin-top: 1vh;
+        margin-right: 7.5vw;
+    }
 
+    #searchbar {
+        margin-left: 2vw;
+        width: 30vw;
+    }
+    #personeel_btn {
+        margin-left: 2vw;
+        margin-right: 3vw;
+    }
+    .nav_onder {
+        margin-top: 2.5vh;
+    }
+    .dYJqfl svg {
+        margin-left: 13.9vw;
+    }
+}
+
+/* Footer CSS */
 footer {
     top: 0;
     display: flex;
