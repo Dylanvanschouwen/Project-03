@@ -1,3 +1,4 @@
+/* General settings */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +22,6 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
-
 /* Lower side of homepage */
 .home_lower {
     height: 40.5vh;
@@ -48,8 +48,7 @@
     width: 13vw;
     margin-left: 23vw;
 }
-
-/* Images CSS */
+/* Home Images CSS */
 #home_IMGlogo {
     position: absolute;
     width: 25vw;

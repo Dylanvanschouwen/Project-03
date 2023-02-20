@@ -94,16 +94,9 @@ ul {
     border: solid black 1px;
     border-radius: 10px;
 }
-#personeel_btn {
-    margin-left: 5vw;
-    display: flex;
-    padding: 5px;
-    border: solid white 2px;
-    border-radius: 10px;
-}
 
 /* Categories dropdown shit */
-.categorie_dropdown {
+.categorie_dropdown_c {
     padding-top: 4px;
     padding-right: 5px;
     border: solid #DD4040 3px;
@@ -112,14 +105,14 @@ ul {
     padding-left: 35px;
     font-weight: bold;
 }
-.categorie_dropdown a {
+.categorie_dropdown_c a {
     color: black;
     font-size: 28px;
 }
-.categorie_content {
+.categorie_content_c {
     display: none;
 }
-.categorie_content a {
+.categorie_content_c a {
     color: black;
     display: flex;
     flex-direction: column;
@@ -131,6 +124,8 @@ ul {
     border-bottom: solid #DD4040 2px;
     border-left: solid #DD4040 2px;
     border-right: solid #DD4040 2px;
+}
+.categorie_content_c a {
     font-weight: normal;
 }
 .a_btn_1 {
@@ -140,14 +135,14 @@ ul {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.categorie_dropdown:hover .categorie_content {
+.categorie_dropdown_c:hover .categorie_content_c {
     display: flex;
     flex-direction: column;
-    width: 18.35vw;
-    margin-top: 2px;
-    z-index: 10;
+    z-index: 10;    
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
-.dYJqfl svg {
+.dropdown_bars1 svg {
     cursor: inherit;
     width: 20px;
     height: 20px;
@@ -155,7 +150,64 @@ ul {
     fill: currentcolor;
     position: absolute;
     color: black;
-    margin-left: 17.8vw;
+    margin-left: 14.5vw;
+    margin-top: 4.35vh;
+}
+
+/* Personeel opties dropdown settings */
+
+.categorie_dropdown_p {
+    padding: 5px;
+    border: solid #DD4040 3px;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 35px;
+}
+.categorie_dropdown_p a {
+    color: black;
+    font-size: 28px;
+}
+.categorie_content_p {
+    display: none;
+}
+.categorie_content_p a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    z-index: 10;
+    border-bottom: solid #DD4040 2px;
+    border-left: solid #DD4040 2px;
+    border-right: solid #DD4040 2px;
+    font-weight: normal;
+    width: 14.4vw;
+}
+.a_btn_1 {
+    border-top: solid #DD4040 1px;
+}
+.a_btn_4 {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.categorie_dropdown_p:hover .categorie_content_p {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.dropdown_bars2 svg {
+    cursor: inherit;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    fill: currentcolor;
+    position: absolute;
+    color: black;
+    margin-left: 69.8vw;
     margin-top: 4.35vh;
 }
 
@@ -175,6 +227,7 @@ ul {
     /* Lower side navbar fixes */
     #searchbar {
         margin-left: 2vw;
+        margin-right: 2vw;
         width: 30vw;
     }
     #personeel_btn {
@@ -183,9 +236,6 @@ ul {
     }
     .nav_onder {
         margin-top: 2.5vh;
-    }
-    .dYJqfl svg {
-        margin-left: 13.9vw;
     }
 
     /* Dropdown fixes */
