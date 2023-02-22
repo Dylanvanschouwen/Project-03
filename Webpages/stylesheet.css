@@ -77,3 +77,24 @@
     height: 35px;
     background: #fff;
 }
+
+#amin{
+    Display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    width: 20%;
+   margin-left: 1px;
+   margin-top: 200px;
+}
+#jack{
+    Display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+    width: 20%;
+    margin-left: 12px;
+    margin-top: 100px;
+
+
+}
