@@ -74,27 +74,34 @@
     padding: 10px 10px 0px 10px;
     bottom: 0;
     margin-top: 610px;
-    height: 35px;
+    height: 10px;
     background: #fff;
 }
 
+
 #amin{
-    Display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30%;
-    width: 20%;
-   margin-left: 1px;
+    display: absolute;
+   height: 50%;
+   width: 30%;
+   margin-left: 20px;
+   margin-right: 4px;
    margin-top: 200px;
 }
 #jack{
-    Display: flex;
+    Display: absolute;
     align-items: center;
-    justify-content: space-between;
-    height: 30%;
-    width: 20%;
-    margin-left: 12px;
-    margin-top: 100px;
+    height: 50%;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 200px;
+}
 
+    #dylan{
+    Display: absolute;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 250px;
 
 }
