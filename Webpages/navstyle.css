@@ -159,7 +159,8 @@ ul {
 /* Personeel opties dropdown settings */
 
 .categorie_dropdown_p {
-    padding: 5px;
+    padding-top: 4px;
+    padding-right: 5px;
     border: solid #DD4040 3px;
     border-radius: 15px;
     background-color: white;
@@ -227,6 +228,4 @@ footer {
 footer p {
     color: white;
 }
-#RTPHoofdtitle {
-    
-}
+
