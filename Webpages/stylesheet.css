@@ -5,6 +5,7 @@
     size: 0;
 }
 
+
 /* Homepage CCS code */
 /* Upper side of homepage */
 .home_upper {
@@ -67,6 +68,58 @@
     border-radius: 50px;
     margin-left: 67vw;
     margin-top: 2.3vh;
+}
+
+
+/* Overbedrijf tussen pagina CSS */
+.overbedrijf_main {
+    max-height: 100vh;
+}
+#overbedrijf_header {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 3vh;
+    text-decoration: underline;
+}
+.overons_list {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 10px;
+
+    font-size: 25px;
+    height: 71.5vh;
+}
+.overons_list a {
+    font-weight: bold;
+    color: white;
+    background-color: #DF0000;
+    padding: 2px;
+    border-radius: 5px;
+}
+.overons_list p {
+    margin-bottom: 10vh;
+    margin-top: 1vh;
+}
+
+
+/* Eco vriendelijkheid */
+#eco_header {
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    background-image: url("./IMAGES/treees.jpg");
+}
+#eco_h1 {
+    color: white;
+    text-decoration: underline;
+    width: 100vw;
+    height: 25vh;
+    margin-left: 100vh;
 }
 
 /* Medewerkers CSS */
