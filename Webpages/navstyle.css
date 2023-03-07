@@ -104,8 +104,9 @@ ul {
     border: solid #DD4040 3px;
     border-radius: 15px;
     background-color: white;
-    padding-left: 2vw;
     font-weight: bold;
+    position: relative;
+    padding-left: 2vw;
 }
 .categorie_dropdown_c a {
     color: black;
@@ -151,20 +152,21 @@ ul {
     fill: currentcolor;
     position: absolute;
     color: black;
-    margin-left: 14.2vw;
-    margin-top: 4.4vh;
+    left: 0.4vw;
+    top: 1.5vh;
 }
 
 /* Personeel opties dropdown settings */
 
 .categorie_dropdown_p {
+    position: relative;
     padding-top: 0.7vh;
     padding-right: 0.5vw;
+    padding-left: 2vw;
     border: solid #DD4040 3px;
     border-radius: 15px;
     background-color: white;
     font-weight: bold;
-    padding-left: 2vw;
 }
 .categorie_dropdown_p a {
     color: black;
@@ -208,8 +210,8 @@ ul {
     fill: currentcolor;
     position: absolute;
     color: black;
-    margin-left: 69.5vw;
-    margin-top: 4.4vh;
+    left: 0.4vw;
+    top: 1.5vh;
 }
 
 /* Footer CSS */
