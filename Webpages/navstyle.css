@@ -4,9 +4,7 @@
     padding: 0;
     font-family: sans-serif;
 }
-main {
-    min-height: 81vh;
-}
+
 
 /* Navbar css */
 .nav_container {

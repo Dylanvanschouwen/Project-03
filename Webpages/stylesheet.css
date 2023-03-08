@@ -5,7 +5,6 @@
     size: 0;
 }
 
-
 /* Homepage CCS code */
 /* Upper side of homepage */
 .home_upper {
@@ -193,4 +192,34 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 20px;
     margin-top: 250px;
 
+}
+
+/* Klachten tussen pagina CSS */
+#klachtpage_main {
+    min-height: 75.8vh;
+}
+#klachtpage_header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    text-decoration: underline;
+}
+#klachtpage_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#klachtpage_list a {
+    font-weight: bold;
+    color: white;
+    background-color: #DF0000;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+#klachtpage_list li {
+    margin-bottom: 5vh;
 }
