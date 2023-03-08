@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klachten en complimenten</title>
-    <link rel="stylesheet" href="stylesheet.css"> <!-- standaard stylesheet -->
-    <link rel="stylesheet" href="navstyle.css"> <!-- Navbar specifieke stylesheet -->
-</head>
-<body>
-<!-- This is the homepage -->
-<!-- Author: Jack -->
-
+<!-- Include navbar om op iedere pagina te kunnen plaatsen -->
 
 <!-- Navbar code -->
 <nav class="nav_container">
@@ -19,13 +6,13 @@
 
     <!-- Bovenste list -->
     <ul class="list_boven">
-        <li><a href="./index.html">Homepage</a></li>
+        <li><a href="index.php">Homepage</a></li>
         <li><a href="">Webshop</a></li>
         <li><a href="">Leveranciers</a></li>
         <li><a href="">Landen</a></li>
-        <li><a href="./Retour policy.html">Bezorgen en retour</a></li>
-        <li><a href="./klachten.html">Klachten en complimenten</a></li>
-        <li><a href="./overbedrijf.html">Over ons bedrijf</a></li>
+        <li><a href="Retour policy.html">Bezorgen en retour</a></li>
+        <li><a href="klachten.php">Klachten en complimenten</a></li>
+        <li><a href="overbedrijf.php">Over ons bedrijf</a></li>
     </ul>
     
     <!-- Onderste list -->
@@ -63,15 +50,3 @@
         </ul>
     </div>  
 </nav>
-
-<!-- Main code -->
-<main>
-
-</main>
-
-<!-- Footer code -->
-<footer>
-    <p>Copyright tekst</p>
-</footer>
-</body>
-</html>

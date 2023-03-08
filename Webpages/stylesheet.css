@@ -72,11 +72,14 @@
 
 
 /* Overbedrijf tussen pagina CSS */
+#overons_main {
+    min-height: 75.8vh;
+}
 #overbedrijf_header {
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 5vh;
     text-decoration: underline;
 }
 .overons_list {
@@ -85,11 +88,8 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-
-    margin-top: 10px;
-
+    margin-top: 10vh;
     font-size: 25px;
-    height: 61.5vh;
 }
 .overons_list a {
     font-weight: bold;
@@ -99,12 +99,15 @@
     border-radius: 5px;
 }
 .overons_list p {
-    margin-bottom: 10vh;
     margin-top: 1vh;
+    margin-bottom: 5vh;
 }
 
 
 /* Eco vriendelijkheid */
+#eco_main {
+    min-height: 0;
+}
 #eco_header {
     display: flex;
     width: 100vw;
@@ -182,7 +185,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 200px;
 }
 
-    #dylan{
+#dylan{
     Display: absolute;
     align-items: center;
     height: 50%;
