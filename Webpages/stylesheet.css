@@ -72,9 +72,6 @@
 
 
 /* Overbedrijf tussen pagina CSS */
-.overbedrijf_main {
-    max-height: 100vh;
-}
 #overbedrijf_header {
     display: flex;
     width: 100vw;
@@ -92,7 +89,7 @@
     margin-top: 10px;
 
     font-size: 25px;
-    height: 71.5vh;
+    height: 61.5vh;
 }
 .overons_list a {
     font-weight: bold;
