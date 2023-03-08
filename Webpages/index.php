@@ -84,6 +84,12 @@
         <a href="" class="home_links" id="home_link2">Link naar de webshop</a>
     </section>
 </section>
+
+
+<?php
+
+?>
+
 </main>
 
 
