@@ -1,11 +1,15 @@
-<!DOCTYPE HTML>  
-<html>
-<head>
-<style>
-.error {color: #FF0000;}
-</style>
-</head>
-<body>  
+<!-- This is the employee complaint form -->
+<!-- Author: Amin -->
+
+<!-- Include head.html -->
+<?php 
+include "../Webpages/include pages/head.php";
+?>
+<!-- Include navbar.html -->
+<?php 
+include "../Webpages/include pages/navbar.php";
+?>
+
 
 <?php
 // define variables and set to empty values
@@ -87,5 +91,8 @@ function test_input($data) {
   <input type="submit" name="submit" value="Submit">  
 </form>
 
-</body>
-</html>
+
+<!-- Include footer.html -->
+<?php
+include "../Webpages/include pages/footer.php";
+?>
