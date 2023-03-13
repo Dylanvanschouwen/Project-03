@@ -37,6 +37,3 @@ include "../Webpages/include pages/navbar.php";
 <?php
 include "../Webpages/include pages/footer.php";
 ?>
-
-</body>
-</html>

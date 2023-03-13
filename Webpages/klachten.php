@@ -20,7 +20,7 @@ include "../Webpages/include pages/navbar.php";
     <section>
         <ul id="klachtpage_list">
             <li><a href="#">Klacht over de website</a></li>
-            <li><a href="#">Klacht over een product</a></li>
+            <li><a href="./productklacht.php">Klacht over een product</a></li>
             <li><a href="./mederwerkerklachten.php">Klacht over een medewerker</a></li>
             <li><a href="#">Compliment geven</a></li>
         </ul>
@@ -32,6 +32,3 @@ include "../Webpages/include pages/navbar.php";
 <?php
 include "../Webpages/include pages/footer.php";
 ?>
-
-</body>
-</html>
