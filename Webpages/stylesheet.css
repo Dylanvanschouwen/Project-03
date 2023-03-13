@@ -224,4 +224,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5vh;
 }
 
+#RPHoofd {
+    Display: flex;
+
+}
+
 /* Product klachten CSS code */
