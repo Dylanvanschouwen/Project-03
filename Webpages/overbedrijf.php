@@ -19,7 +19,7 @@ include "../Webpages/include pages/navbar.php";
 
     <section class="overons_list">
         <ul>
-            <li><a href="./Medewerkers.html">Onze medewerkers</a>
+            <li><a href="./Medewerkers.php">Onze medewerkers</a>
             <p>Meer leren over de 3 developers van ons bedrijf? Wacht niet langer en druk op rode knop!</p></li>
             <li><a href="./ecovriendelijkheid.php">Ecovriendelijkheid</a>
             <p>Ons bedrijf doet er alles aan om ecovriendelijk te zijn en ons milieu te redden. Klik op de rode knop en leer hier meer over.</p></li>

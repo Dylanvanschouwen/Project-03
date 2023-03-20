@@ -41,12 +41,38 @@ include "../Webpages/include pages/navbar.php";
             <input type="radio" name="gender">
             <br>
 
+            <label for="product_naam">Over welk product gaat het?</label>
+            <input type="text" name="product_naam">
+            <br>
 
-            
+            <label for="klacht_beschrijving">Wat is uw klacht over dit product?</label>
+            <input type="text" name="klacht_beschrijving">
+            <br>
+
+            <label for="klacht_oplossing">Hoe wilt u dat wij dit oplossen?</label>
+            <input type="text" name="klacht_oplossing">
+            <br>
+
             <br>
             <input type="submit" value="Verzenden" name="submit_btn">
         </form>
     </section>
+
+
+    <!-- PHP van product klachten formulier -->
+    <?php
+    try {
+        $db = new PDO("mysql:host=localhost;dbname=tempmediamarkt_db", "root", "");
+    } catch (PDOException $e) {
+        die("ERROR: " . $e->getMessage());
+    }
+
+    if (isset($_POST["submit_btn"])) {
+        echo "Gegevens verstuurd!";
+    }
+
+
+    ?>
 </main>
 
 
