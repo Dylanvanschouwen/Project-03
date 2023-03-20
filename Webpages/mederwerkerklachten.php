@@ -48,8 +48,6 @@ catch(PDOException $e)
 $sqlSelect = "SELECT * from berichten";
 $data = $conn->query($sqlSelect);
 
-
-}
 $conn = null;
 ?>
 
@@ -58,7 +56,10 @@ $conn = null;
 
 
 
-}
+
+
+
+
 
 
 

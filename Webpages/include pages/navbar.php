@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nep Mediamarkt</title>
-    <link rel="stylesheet" href="stylesheet.css"> <!-- standaard stylesheet -->
-    <link rel="stylesheet" href="navstyle.css"> <!-- Navbar specifieke stylesheet -->
-</head>
-<body>
-<!-- This is the homepage -->
-<!-- Author: Jack -->
-
+<!-- Include navbar om op iedere pagina te kunnen plaatsen -->
 
 <!-- Navbar code -->
 <nav class="nav_container">
@@ -19,13 +6,13 @@
 
     <!-- Bovenste list -->
     <ul class="list_boven">
-        <li><a href="./index.html">Homepage</a></li>
+        <li><a href="index.php">Homepage</a></li>
         <li><a href="">Webshop</a></li>
         <li><a href="">Leveranciers</a></li>
         <li><a href="">Landen</a></li>
-        <li><a href="./Retour policy.html">Bezorgen en retour</a></li>
-        <li><a href="">Klachten en complimenten</a></li>
-        <li><a href="./overbedrijf.html">Over ons bedrijf</a></li>
+        <li><a href="Retour policy.php">Bezorgen en retour</a></li>
+        <li><a href="klachten.php">Klachten en complimenten</a></li>
+        <li><a href="overbedrijf.php">Over ons bedrijf</a></li>
     </ul>
     
     <!-- Onderste list -->
@@ -63,40 +50,3 @@
         </ul>
     </div>  
 </nav>
-
-
-<!-- Main code -->
-<main>
-<section class="home_upper">
-    <img src="./IMAGES/1280px-Media_Markt_logo.png" alt="Mediamarkt logo" id="home_IMGlogo">
-    <section class="home_uppercrap">
-        <h1>Mediamarkt</h1>
-        <p>Mediamarkt, het bedrijf voor al jouw technische producten! Van wasmachines tot toetsenborden wij hebben het allemaal!</p>
-    </section>    
-</section>
-
-<section class="home_lower">
-    <img src="./IMAGES/elementor-placeholder-image.png" alt="Product foto" id="home_IMGproduct">
-    <section class="home_lowercrap">
-        <h2>Random product naam</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget augue mattis, lacinia quam id, congue augue. Aenean nisl ligula, eleifend a ipsum vel, commodo tristique metus. Donec varius hendrerit tortor eu commodo. Mauris eget neque sit amet nibh accumsan pharetra sit amet vitae lorem. Pellentesque vestibulum rutrum vulputate.</p>
-        <a href="" class="home_links" id="home_link1">Link naar het product</a>
-        <a href="" class="home_links" id="home_link2">Link naar de webshop</a>
-    </section>
-</section>
-
-
-<?php
-
-?>
-
-</main>
-
-
-<!-- Footer code -->
-<footer>
-    <p>Copyright tekst</p>
-</footer>
-
-</body>
-</html>

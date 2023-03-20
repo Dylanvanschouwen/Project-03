@@ -5,7 +5,6 @@
     size: 0;
 }
 
-
 /* Homepage CCS code */
 /* Upper side of homepage */
 .home_upper {
@@ -72,14 +71,14 @@
 
 
 /* Overbedrijf tussen pagina CSS */
-.overbedrijf_main {
-    max-height: 100vh;
+#overons_main {
+    min-height: 75.8vh;
 }
 #overbedrijf_header {
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 5vh;
     text-decoration: underline;
 }
 .overons_list {
@@ -88,11 +87,8 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-
-    margin-top: 10px;
-
+    margin-top: 10vh;
     font-size: 25px;
-    height: 71.5vh;
 }
 .overons_list a {
     font-weight: bold;
@@ -102,12 +98,15 @@
     border-radius: 5px;
 }
 .overons_list p {
-    margin-bottom: 10vh;
     margin-top: 1vh;
+    margin-bottom: 5vh;
 }
 
 
 /* Eco vriendelijkheid */
+#eco_main {
+    min-height: 0;
+}
 #eco_header {
     display: flex;
     width: 100vw;
@@ -185,7 +184,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 200px;
 }
 
-    #dylan{
+#dylan{
     Display: absolute;
     align-items: center;
     height: 50%;
@@ -194,6 +193,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 250px;
 
 }
+ HEAD
 /*medewerker klachten form*/
 * {
     margin: 0;
@@ -291,3 +291,40 @@ a {
 a:hover {
     color: #fff;
 }
+/* Klachten tussen pagina CSS */
+#klachtpage_main {
+    min-height: 75.8vh;
+}
+#klachtpage_header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    text-decoration: underline;
+}
+#klachtpage_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#klachtpage_list a {
+    font-weight: bold;
+    color: white;
+    background-color: #DF0000;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+#klachtpage_list li {
+    margin-bottom: 5vh;
+}
+
+#RPHoofd {
+    Display: flex;
+
+}
+
+/* Product klachten CSS code */
+
