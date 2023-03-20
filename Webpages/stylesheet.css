@@ -193,7 +193,104 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 250px;
 
 }
+ HEAD
+/*medewerker klachten form*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: #1b1c1e;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display',
+        serif;
+    color: white;
+    font-weight: 60;
+    padding-bottom: 20px;
+}
+
+p {
+    color: #d2d2d2;
+}
+
+p,
+input,
+textarea,
+label {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.container {
+    max-width: 50px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+form {
+    max-width: 50px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: #828282;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #828282;
+}
+
+input[type=submit] {
+    background-color: #fafcff;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+    background: #FFF;
+    color: #fbfbfb;
+}
+
+input,
+textarea {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #fffdfd;
+}
+
+a {
+    color: #fefefe;
+    font-style: italic;
+}
+
+a:hover {
+    color: #fff;
+}
 /* Klachten tussen pagina CSS */
 #klachtpage_main {
     min-height: 75.8vh;
@@ -230,3 +327,4 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Product klachten CSS code */
+
