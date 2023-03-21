@@ -171,22 +171,31 @@ function PrintCrudBier($result){
 
 function UpdateBier($row){
     echo "Update row<br>";
-    var_dump($row);
+    //var_dump($row);
+    try{
+    // connect database
     $conn = ConnectDb();
-
-    // Update data uit de opgegeven table methode query
-    // query: is een prepare en execute in 1 zonder placeholders
     
-
     // update data uit de opgegeven table methode prepare
-    $sql = "UPDATE - `bier` SET `naam` = '$row['naam']' WHERE `bier`.`biercode` = 2";
-    if ($conn->query($sql) === TRUE){
-        $query->execute();
-    }
+    $sql = "UPDATE  bier
+    SET
+        naam = '$row[naam]',
+        soort = '$row[soort]',
+        stijl = '$row[stijl]',
+        alcohol = '$row[alcohol]',
+        brouwcode = '$row[brouwcode]'
+    WHERE biercode = $row[biercode]";
     
-   
+    echo $sql;
+    exit;
 
-    return $result;
+    $query = $conn->prepare($sql);
+    $query-> execute();
+}
+
+catch(PDOException $e){
+    echo "Connection failed: " . $e->getmessage();
+    }
 }
 
 function DeleteBier($biercode){

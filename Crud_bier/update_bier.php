@@ -1,7 +1,7 @@
 <?php
         require_once('functions.php');
         // test of er op de wijzig knop is gedrukt
-        if(isset($_POST) && isset ($_POST['btn_wzg'])){
+        if(isset ($_POST['btn_wzg'])){
             UpdateBier ($_POST);
 
             //header("location: update.php?$_POST[NR]");
@@ -17,7 +17,7 @@
         $biercode = $_GET['biercode'];
 
         $row = GetBier($biercode);
-    }
+    
    ?>
 
 <html>
@@ -34,3 +34,7 @@
         </form>
     </body>
 </html>
+
+<?php
+        }
+        ?>
