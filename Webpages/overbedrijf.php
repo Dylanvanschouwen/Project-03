@@ -23,7 +23,7 @@ include "../Webpages/include pages/navbar.php";
             <p>Meer leren over de 3 developers van ons bedrijf? Wacht niet langer en druk op rode knop!</p></li>
             <li><a href="./ecovriendelijkheid.php">Ecovriendelijkheid</a>
             <p>Ons bedrijf doet er alles aan om ecovriendelijk te zijn en ons milieu te redden. Klik op de rode knop en leer hier meer over.</p></li>
-            <li><a href="#">Onze geschiedenis en doelstelling</a>
+            <li><a href="./geschiedenis.php">Onze geschiedenis en doelstelling</a>
             <p>Wij zijn een jong bedrijf met een ambitieus doel. Alles hierover kan je lezen als je op de rode knop drukt!</p></li>
         </ul>
     </section>
