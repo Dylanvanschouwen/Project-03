@@ -13,12 +13,12 @@ include "../Webpages/include pages/navbar.php";
 
 <!-- Main code -->
 <main>
-    <header>
-        <h1>Klacht over een product formulier</h1>
+    <header class="productklacht_header">
+        <h1>Klacht over een product</h1>
     </header>
 
-    <section class="productklacht_form">
-        <form method="post" action="#">
+    <section>
+        <form method="post" action="./productklachtaction.php"  class="productklacht_form">
             <label for="f_name">Voornaam: </label>
             <input type="text" name="f_name"> 
             <br>
@@ -36,9 +36,9 @@ include "../Webpages/include pages/navbar.php";
             <br>
 
             <label for="gender">Man</label>    
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" value="Man">
             <label for="gender">Vrouw</label>   
-            <input type="radio" name="gender">
+            <input type="radio" name="gender" value="Vrouw">
             <br>
 
             <label for="product_naam">Over welk product gaat het?</label>
@@ -54,23 +54,42 @@ include "../Webpages/include pages/navbar.php";
             <br>
 
             <br>
-            <input type="submit" value="Verzenden" name="submit_btn">
+            <input type="submit" value="Verzenden" name="submit_btn" id="productklacht_submit">
         </form>
     </section>
 
 
     <!-- PHP van product klachten formulier -->
-    <?php
+<?php
+function connectdb() {
     try {
-        $db = new PDO("mysql:host=localhost;dbname=tempmediamarkt_db", "root", "");
+        $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
+        echo "Connection succesful! <br>";
+        return $db;
     } catch (PDOException $e) {
         die("ERROR: " . $e->getMessage());
     }
+}
 
-    if (isset($_POST["submit_btn"])) {
-        echo "Gegevens verstuurd!";
-    }
+function queryread($conn) {
+    $fname = $_POST["f_name"];
+    $lname = $_POST["l_name"];
+    $phone = $_POST["phone"];
+    $email = $_POST["email"];
+    $gender = $_POST["gender"];
+    $product = $_POST["product_naam"];
+    $probleem = $_POST["klacht_beschrijving"];
+    $oplossing = $_POST["klacht_oplossing"];
 
+    // query read
+    $queryinsert = $conn->prepare("INSERT INTO productklachten(voornaam, achternaam, telefoon, email, gender, product, probleem, oplossing) VALUES ('$fname', '$lname', '$phone', '$email', '$gender', '$product', '$probleem', '$oplossing')");
+    $queryinsert->execute();
+}
+
+$conn = connectdb();
+if (isset($_POST["submit_btn"])) {
+    queryread($conn);
+}
 
     ?>
 </main>
