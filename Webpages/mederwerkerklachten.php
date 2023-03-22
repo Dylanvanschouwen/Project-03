@@ -7,7 +7,6 @@
     Straatnaam: <textarea type="text" name="straatnaam" id="straatnaam"></textarea></br></br>
     Huisnummer: <textarea type="text" name="huisnummer" id="huisnummer"></textarea></br></br>
     Contact: <textarea type="text" name="contactmanier" id="contactmanier"></textarea></br></br>
-     <textarea type="text" name="bericht" id="bericht"></textarea></br></br>
     <input type="submit" name="knop" id="knop">
 </form>
 
@@ -25,7 +24,7 @@ $dbname = "mediamarkt";
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
  
   if (isset($_POST["knop"])){
-    echo ("verzend knop werkt");
+
     $volledigenaam = $_POST["naam"];
     $straatnaam = $_POST["straatnaam"];
     $klachtdatum = "NULL";
