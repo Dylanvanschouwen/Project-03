@@ -198,9 +198,4 @@ catch(PDOException $e){
     }
 }
 
-function DeleteBier($biercode){
-    echo "Delete row<br>";
-    var_dump($biercode);
-}
-
 ?>
