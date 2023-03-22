@@ -171,6 +171,8 @@ function PrintCrudBier($result){
 
 function UpdateBier($row){
     echo "Update row<br>";
+
+    var_dump($row);
     //var_dump($row);
     try{
     // connect database
@@ -185,7 +187,7 @@ function UpdateBier($row){
         alcohol = '$row[alcohol]',
         brouwcode = '$row[brouwcode]'
     WHERE biercode = $row[biercode]";
-    
+
     echo $sql;
     exit;
 

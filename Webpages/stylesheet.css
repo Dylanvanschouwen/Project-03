@@ -193,104 +193,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 250px;
 
 }
- HEAD
-/*medewerker klachten form*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #1b1c1e;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Playfair Display',
-        serif;
-    color: white;
-    font-weight: 60;
-    padding-bottom: 20px;
-}
-
-p {
-    color: #d2d2d2;
-}
-
-p,
-input,
-textarea,
-label {
-    font-family: 'Poppins',
-        sans-serif;
-}
-
-.container {
-    max-width: 50px;
-    margin: 0 auto;
-    padding: 5%;
-}
-
-form {
-    max-width: 50px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px 0;
-}
-
-input,
-textarea,
-label {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    color: #828282;
-}
-
-input,
-textarea {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid #828282;
-}
-
-input[type=submit] {
-    background-color: #fafcff;
-    padding: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-bottom: none;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: all .3s ease;
-}
-
-input[type=submit]:hover {
-    background: #FFF;
-    color: #fbfbfb;
-}
-
-input,
-textarea {
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-input:focus,
-textarea:focus {
-    outline: 1px solid #fffdfd;
-}
-
-a {
-    color: #fefefe;
-    font-style: italic;
-}
-
-a:hover {
-    color: #fff;
-}
 /* Klachten tussen pagina CSS */
 #klachtpage_main {
     min-height: 75.8vh;
@@ -328,34 +230,44 @@ a:hover {
     width:100vw;
 }
 
-#RPheader_1{
-    margin-bottom:20px;
-    width:100vw;
-}
-#RPheader_2{
-    margin-bottom:20px;
-    width:100vw;
-}
-.RP_section1 div {
-    background-color: orange;
-    float: left;
+.RP_header{
+    margin-left:30px;
     display:flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    margin-bottom:40px;
+}
+.RPheader_1{
+    margin-right:40px;
+    background-color: white;
+}
+.RPheader_2{
+    background-color: gray;
+    margin-left:40px;
+}
+
+.RP_section1 {
+    color: rgb(0, 0, 0)0, 56, 56;
+    display:flex;
+    margin:30px;
+    justify-content: space-between;    
 }
 
 .RP-row_1{
-display:flex;
-justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+    display:flex;
+    margin:30px;
+    margin-bottom:5%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
 }
 .RPdropdown_1 {
     position: relative;
     display: inline-block;
+    cursor: inherit;
+    transform: rotate(90deg);
+    transition: transform 0.25s ease-in-out 0s
 }
 .RPdropdown_1-content {
-    display: none;
-    background-color: orange;
+    display: block;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -368,7 +280,6 @@ justify-content: space-evenly;
 }
 .RPdropdown_2-content {
     display: none;
-    background-color: orange;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -381,12 +292,145 @@ justify-content: space-evenly;
 }
 .RPdropdown_3-content {
     display: none;
-    background-color: orange;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
   }
+
+  
+.RP-row_2{
+    color: rgb(0, 0, 0);
+    display:flex;
+    margin:30px;
+    margin-bottom:5%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+}
+.RPdropdown_4 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_4-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_5 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_5-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_6 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_6-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RP-row_3{
+    color: rgb(0, 0, 0);
+    display:flex;
+    margin:30px;
+    margin-bottom:5%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+}
+.RPdropdown_7 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_7-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_8 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_8-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_9 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_9-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RP-row_4{
+    color: rgb(0, 0, 0);
+    display:flex;
+    margin:30px;
+    margin-bottom:5%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+    
+}
+.RPdropdown_10 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_10-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_11 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_11-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+
+.RPdropdown_12 {
+position: relative;
+display: inline-block;
+}
+.RPdropdown_12-content {
+display: none;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
 
 /* Geschiedenis en doelstellingen van bedrijf */
 #Blue{
@@ -400,4 +444,19 @@ justify-content: space-evenly;
 
 }
 /* Product klachten CSS code */
-
+.productklacht_form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 37.5%;
+    text-align: center;
+}
+.productklacht_header {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#productklacht_submit {
+    width: 50% !important;
+    margin-left: 12.5% !important;
+}

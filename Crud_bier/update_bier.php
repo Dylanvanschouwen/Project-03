@@ -1,8 +1,8 @@
 <?php
         require_once('functions.php');
         // test of er op de wijzig knop is gedrukt
-        if(isset ($_POST['btn_wzg'])){
-            UpdateBier ($_POST);
+        if(isset($_POST['btn_wzg'])){
+            UpdateBier($_POST);
 
             //header("location: update.php?$_POST[NR]");
             
@@ -22,13 +22,14 @@
 
 <html>
     <body>
-        <form method="post" action='crud_bieren.php'><br>
+        <form method="post">
+            <br>
         Biercode:<input type="" name="biercode" value="<?php echo $row['biercode'];?>"><br>
-        Naam:<input type="" name="Naam" value="<?php echo $row ['naam'];?>"><br>
-        Soort:<input type="" name="Soort" value="<?php echo $row ['soort'];?>"><br>
-        Stijl:<input type="" name="Stijl" value="<?php echo $row ['stijl'];?>"><br>
-        Alcohol:<input type="" name="Alcohol" value="<?php echo $row ['alcohol'];?>"><br>
-        Brouwcode:<input type="" name="Brouwcode" value="<?php echo $row ['brouwcode'];?>"><br>
+        Naam:<input type="" name="naam" value="<?php echo $row ['naam'];?>"><br>
+        Soort:<input type="" name="soort" value="<?php echo $row ['soort'];?>"><br>
+        Stijl:<input type="" name="stijl" value="<?php echo $row ['stijl'];?>"><br>
+        Alcohol:<input type="" name="alcohol" value="<?php echo $row ['alcohol'];?>"><br>
+        Brouwcode:<input type="" name="brouwcode" value="<?php echo $row ['brouwcode'];?>"><br>
        
         <input type="submit" name="btn_wzg" value="Wijzigen"><br>
         </form>
