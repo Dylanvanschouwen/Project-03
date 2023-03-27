@@ -457,6 +457,23 @@ z-index: 1;
     margin-bottom: 2rem;
 }
 #productklacht_submit {
-    width: 50% !important;
-    margin-left: 12.5% !important;
+    background-color: #DD4040;
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 25%;
+    border: black solid 2px;
+    margin-bottom: 2rem;
+}
+.productklacht_text {
+    height: 4rem;
+}
+.productklacht_gender {
+    display: flex;
+    flex-direction: row;
+}
+
+#productklacht_action {
+    border: black 1px solid;
 }
