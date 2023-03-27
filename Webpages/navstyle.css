@@ -220,7 +220,7 @@ ul {
 
 /* Footer CSS */
 footer {
-    bottom: 0;
+    bottom: 0px;
     display: flex;
     background-color: #DF0000;
     border-top: solid #DD4040 3px;

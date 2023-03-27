@@ -1,8 +1,3 @@
-function toggleDropdown() {
-  var dropdown = document.getElementById("dropdown_123");
-  dropdown.classList.toggle("dropdown-content");
-}
-
 function toggleRPdropdown_1() {
   var dropdown = document.getElementById("RPdropdown_ID_1");
   dropdown.classList.toggle("RPdropdown_1-content");
