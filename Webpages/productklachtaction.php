@@ -16,7 +16,6 @@ include "../Webpages/include pages/navbar.php";
     <h1>De ingevulde informatie:</h1>
 </main>
 
-
 <!-- product complaint action page php code -->
 <?php
 
@@ -30,7 +29,7 @@ function connectdb() {
 }
 
 function printtable() {
-    echo "<table  id='productklacht_action'>";
+    echo "<table id='productklacht_action'>";
     echo "<tr><td>Voornaam: </td><td>" . $_POST["f_name"] . "</td></tr>";
     echo "<tr><td>Achternaam: </td><td>" . $_POST["l_name"] . "</td></tr>";
     echo "<tr><td>Telefoonnummer: </td><td>" . $_POST["phone"] . "</td></tr>";
@@ -39,13 +38,10 @@ function printtable() {
     echo "<tr><td>Product: </td><td>" . $_POST["product_naam"] . "</td></tr>";
     echo "<tr><td>Het probleem: </td><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
     echo "<tr><td>De oplossing: </td><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
-    echo "<input type='submit'>";
-    echo "</table>";
+    echo "</table><br>";
 }
 
-
-
-function queryread($conn) {
+function queryinsert($conn) {
     $fname = $_POST["f_name"];
     $lname = $_POST["l_name"];
     $phone = $_POST["phone"];
@@ -54,13 +50,17 @@ function queryread($conn) {
     $product = $_POST["product_naam"];
     $probleem = $_POST["klacht_beschrijving"];
     $oplossing = $_POST["klacht_oplossing"];
-
     // query insert
     $queryinsert = $conn->prepare("INSERT INTO productklachten(voornaam, achternaam, telefoon, email, gender, product, probleem, oplossing) VALUES ('$fname', '$lname', '$phone', '$email', '$gender', '$product', '$probleem', '$oplossing')");
     $queryinsert->execute();
 }
 
 printtable();
+$conn = connectdb();
+
+if (isset($_POST["submit_btn"])) {
+    queryinsert($conn);
+}
 
 ?>
 

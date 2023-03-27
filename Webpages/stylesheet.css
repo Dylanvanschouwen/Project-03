@@ -464,6 +464,7 @@ z-index: 1;
     width: 50%;
     margin-left: 25%;
     border: black solid 2px;
+    margin-bottom: 2rem;
 }
 .productklacht_text {
     height: 4rem;
@@ -475,7 +476,4 @@ z-index: 1;
 
 #productklacht_action {
     border: black 1px solid;
-}
-#productklacht_action tr {
-
 }
