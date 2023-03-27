@@ -451,3 +451,36 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 /* Product klachten CSS code */
+.productklacht_form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 37.5%;
+    text-align: center;
+}
+.productklacht_header {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#productklacht_submit {
+    background-color: #DD4040;
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 25%;
+    border: black solid 2px;
+    margin-bottom: 2rem;
+}
+.productklacht_text {
+    height: 4rem;
+}
+.productklacht_gender {
+    display: flex;
+    flex-direction: row;
+}
+
+#productklacht_action {
+    border: black 1px solid;
+}

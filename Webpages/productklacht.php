@@ -13,12 +13,13 @@ include "../Webpages/include pages/navbar.php";
 
 <!-- Main code -->
 <main>
-    <header>
-        <h1>Klacht over een product formulier</h1>
+
+    <header class="productklacht_header">
+        <h1>Klacht over een product</h1>
     </header>
 
-    <section class="productklacht_form">
-        <form method="post" action="#">
+    <section>
+        <form method="post" action="./productklachtaction.php"  class="productklacht_form">
             <label for="f_name">Voornaam: </label>
             <input type="text" name="f_name"> 
             <br>
@@ -35,44 +36,31 @@ include "../Webpages/include pages/navbar.php";
             <input type="text" name="email">
             <br>
 
-            <label for="gender">Man</label>    
-            <input type="radio" name="gender">
-            <label for="gender">Vrouw</label>   
-            <input type="radio" name="gender">
+            <div id="productklacht_gender">
+                <label for="gender">Man</label>    
+                <input type="radio" name="gender" value="Man">
+                <label for="gender">Vrouw</label>   
+                <input type="radio" name="gender" value="Vrouw">
+            </div>
             <br>
 
             <label for="product_naam">Over welk product gaat het?</label>
-            <input type="text" name="product_naam">
+            <input type="text" name="product_naam" class="productklacht_text">
             <br>
 
             <label for="klacht_beschrijving">Wat is uw klacht over dit product?</label>
-            <input type="text" name="klacht_beschrijving">
+            <input type="text" name="klacht_beschrijving" class="productklacht_text">
             <br>
 
             <label for="klacht_oplossing">Hoe wilt u dat wij dit oplossen?</label>
-            <input type="text" name="klacht_oplossing">
+            <input type="text" name="klacht_oplossing" class="productklacht_text">
             <br>
 
             <br>
-            <input type="submit" value="Verzenden" name="submit_btn">
+            <input type="submit" value="Verzenden" name="submit_btn" id="productklacht_submit">
         </form>
     </section>
 
-
-    <!-- PHP van product klachten formulier -->
-    <?php
-    try {
-        $db = new PDO("mysql:host=localhost;dbname=tempmediamarkt_db", "root", "");
-    } catch (PDOException $e) {
-        die("ERROR: " . $e->getMessage());
-    }
-
-    if (isset($_POST["submit_btn"])) {
-        echo "Gegevens verstuurd!";
-    }
-
-
-    ?>
 </main>
 
 
