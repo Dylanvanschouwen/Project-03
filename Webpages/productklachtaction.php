@@ -13,7 +13,9 @@ include "../Webpages/include pages/navbar.php";
 
 <!-- Main code -->
 <main>
-    <h1>De ingevulde informatie:</h1>
+    <div id="productklacht_action_h1">
+        <h1>Uw ingevulde klacht:</h1>
+    </div>
 </main>
 
 <!-- product complaint action page php code -->
@@ -29,16 +31,16 @@ function connectdb() {
 }
 
 function printtable() {
-    echo "<table id='productklacht_action'>";
-    echo "<tr><td>Voornaam: </td><td>" . $_POST["f_name"] . "</td></tr>";
-    echo "<tr><td>Achternaam: </td><td>" . $_POST["l_name"] . "</td></tr>";
-    echo "<tr><td>Telefoonnummer: </td><td>" . $_POST["phone"] . "</td></tr>";
-    echo "<tr><td>Email: </td><td>" . $_POST["email"] . "</td></tr>";
-    echo "<tr><td>Gender: </td><td>" . $_POST["gender"] . "</td></tr><";
-    echo "<tr><td>Product: </td><td>" . $_POST["product_naam"] . "</td></tr>";
-    echo "<tr><td>Het probleem: </td><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
-    echo "<tr><td>De oplossing: </td><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
-    echo "</table><br>";
+    echo "<div class='productklacht_action'><table>";
+    echo "<tr><th>Voornaam: </th><td>" . $_POST["f_name"] . "</td></tr>";
+    echo "<tr><th>Achternaam: </th><td>" . $_POST["l_name"] . "</td></tr>";
+    echo "<tr><th>Telefoonnummer: </th><td>" . $_POST["phone"] . "</td></tr>";
+    echo "<tr><th>Email: </th><td>" . $_POST["email"] . "</td></tr>";
+    echo "<tr><th>Gender: </th><td>" . $_POST["gender"] . "</td></tr>";
+    echo "<tr><th>Product: </th><td>" . $_POST["product_naam"] . "</td></tr>";
+    echo "<tr><th>Het probleem: </th><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
+    echo "<tr><th>De oplossing: </th><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
+    echo "</table></div><br>";
 }
 
 function queryinsert($conn) {
@@ -58,9 +60,9 @@ function queryinsert($conn) {
 printtable();
 $conn = connectdb();
 
-if (isset($_POST["submit_btn"])) {
-    queryinsert($conn);
-}
+// if (isset($_POST["submit_btn"])) {
+//     queryinsert($conn);
+// }
 
 ?>
 

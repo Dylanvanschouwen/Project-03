@@ -474,13 +474,31 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 2rem;
 }
 .productklacht_text {
-    height: 4rem;
+    height: 3rem;
 }
 .productklacht_gender {
     display: flex;
     flex-direction: row;
 }
 
-#productklacht_action {
+#productklacht_action_h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.productklacht_action {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.productklacht_action table {
     border: black 1px solid;
+}
+.productklacht_action td {
+    height: 2rem;
+    text-align: left;
+    border: black 1px solid;
+}
+.productklacht_action th {
+    text-align: left;
 }
