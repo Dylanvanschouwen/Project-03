@@ -8,7 +8,7 @@
     <div class="list_boven_container">
         <ul class="list_boven">
             <li><a href="index.php">Homepage</a></li>
-            <li><a href="">Webshop</a></li>
+            <li><a href="webshop.php">Webshop</a></li>
             <li><a href="">Leveranciers</a></li>
             <li><a href="landenoverzicht.php">Landen</a></li>
             <li><a href="Retour policy.php">Bezorgen en retour</a></li>
