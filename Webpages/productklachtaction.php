@@ -10,13 +10,13 @@ include "../Webpages/include pages/head.php";
 include "../Webpages/include pages/navbar.php";
 ?>
 
-
-<!-- Main code -->
-<main>
+<!-- Main -->
+<main id="productklacht_action_main">
+    <!-- Main HTML -->
     <div id="productklacht_action_h1">
-        <h1>Uw ingevulde klacht:</h1>
+        <h1>Uw klacht is verstuurd naar onze medewerkers! Dit is wat er is opgestuurd:</h1>
     </div>
-</main>
+
 
 <!-- product complaint action page php code -->
 <?php
@@ -31,7 +31,7 @@ function connectdb() {
 }
 
 function printtable() {
-    echo "<div class='productklacht_action'><table>";
+    echo "<div class='productklacht_action_container'><table>";
     echo "<tr><th>Voornaam: </th><td>" . $_POST["f_name"] . "</td></tr>";
     echo "<tr><th>Achternaam: </th><td>" . $_POST["l_name"] . "</td></tr>";
     echo "<tr><th>Telefoonnummer: </th><td>" . $_POST["phone"] . "</td></tr>";
@@ -66,6 +66,11 @@ $conn = connectdb();
 
 ?>
 
+<div id="productklachtaction_a_container">
+    <a href='./homepage.php' id="productklachtaction_a">Terug naar de homepage.</a>
+</div>
+
+</main>
 
 <!-- Include footer.html -->
 <?php

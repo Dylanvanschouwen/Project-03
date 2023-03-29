@@ -485,20 +485,42 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.productklacht_action {
+.productklacht_action_container {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.productklacht_action table {
+.productklacht_action_container table {
     border: black 1px solid;
+    min-height: 20rem;
 }
-.productklacht_action td {
-    height: 2rem;
+.productklacht_action_container td {
+    height: 2.5rem;
     text-align: left;
+    width: 20rem;
+    word-wrap: break-word;
+    max-width: 80rem;
+}
+.productklacht_action_container th {
+    text-align: left;
+    width: 10rem;
+}
+#productklacht_action_main {
+    min-height: 78.7vh;
+}
+#productklachtaction_a_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#productklachtaction_a {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #DD4040;
     border: black 1px solid;
-}
-.productklacht_action th {
-    text-align: left;
+    color: white;
 }
