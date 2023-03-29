@@ -4,7 +4,6 @@
     padding: 0;
     size: 0;
 }
-
 /* Homepage CCS code */
 /* Upper side of homepage */
 .home_upper {
@@ -227,12 +226,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 #RP_main {
     margin-top: 20px;
-    width:100vw;
+    margin-left:30px;
 }
 
 .RP_header{
-    margin-left:30px;
     display:flex;
+    margin-right:30px;
     flex-direction: row;
 }
 .RPheader_1{
@@ -241,39 +240,72 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .RPheader_2{
     background-color: gray;
-    margin-left:40px;
 }
 
 .RP_section1 {
     color: rgb(0, 0, 0)0, 56, 56;
     display:flex;
-    margin:30px;
+    margin-right:30px;
+    margin-top: 30px;
     justify-content: space-between;    
 }
 
+.RP-rows{
+    margin-right:30px;
+}
 .RP-row_1{
     color: rgb(0, 0, 0);
     display:flex;
-    margin:30px;
-    margin-bottom:5%;
+    align-items: center;
     justify-content: space-between;
     border-top: 1px solid rgb(207, 203, 202);
+    line-height: 75px;
 }
-.RPdropdown_1 {
+
+.RP-row_2{
+    color: rgb(0, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+    line-height: 75px;
+}
+
+.RP-row_3{
+    color: rgb(0, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+    line-height: 75px;
+}
+
+.RP-row_4{
+    color: rgb(0, 0, 0);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 203, 202);
+    line-height: 75px;
+}
+
+.RPdropdown_1 svg {
     position: relative;
     display: inline-block;
-    cursor: inherit;
     transform: rotate(90deg);
-    transition: transform 0.25s ease-in-out 0s
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: rotate (90deg);
 }
+
 .RPdropdown_1-content {
-    display: block;
+    display: none;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow:0px 8px 16px 0px rgba (0,0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-  }
-
+}
   .RPdropdown_2 {
     position: relative;
     display: inline-block;
@@ -284,7 +316,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-  }
+}
 
   .RPdropdown_3 {
     position: relative;
@@ -296,140 +328,115 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-  }
+}
 
-  
-.RP-row_2{
-    color: rgb(0, 0, 0);
-    display:flex;
-    margin:30px;
-    margin-bottom:5%;
-    justify-content: space-between;
-    border-top: 1px solid rgb(207, 203, 202);
-}
 .RPdropdown_4 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
+
 .RPdropdown_4-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_5 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_5-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_6 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_6-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
-.RP-row_3{
-    color: rgb(0, 0, 0);
-    display:flex;
-    margin:30px;
-    margin-bottom:5%;
-    justify-content: space-between;
-    border-top: 1px solid rgb(207, 203, 202);
-}
 .RPdropdown_7 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_7-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_8 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_8-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_9 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_9-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
-.RP-row_4{
-    color: rgb(0, 0, 0);
-    display:flex;
-    margin:30px;
-    margin-bottom:5%;
-    justify-content: space-between;
-    border-top: 1px solid rgb(207, 203, 202);
-    
-}
 .RPdropdown_10 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_10-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_11 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_11-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 .RPdropdown_12 {
-position: relative;
-display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 .RPdropdown_12-content {
-display: none;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-padding: 12px 16px;
-z-index: 1;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
 }
 
 /* Geschiedenis en doelstellingen van bedrijf */
@@ -467,13 +474,95 @@ z-index: 1;
     margin-bottom: 2rem;
 }
 .productklacht_text {
-    height: 4rem;
+    height: 3rem;
 }
 .productklacht_gender {
     display: flex;
     flex-direction: row;
 }
 
-#productklacht_action {
+#productklacht_action_h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.productklacht_action_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.productklacht_action_container table {
+    border: black 1px solid;
+    min-height: 20rem;
+    margin-bottom: 1.5rem;
+}
+.productklacht_action_container td {
+    height: 2.5rem;
+    text-align: left;
+    width: 20rem;
+    word-wrap: break-word;
+    max-width: 80rem;
+}
+.productklacht_action_container th {
+    text-align: left;
+    width: 10rem;
+}
+#productklacht_action_main {
+    min-height: 78.7vh;
+}
+#productklachtaction_a_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#productklachtaction_a {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #DD4040;
+    border: black 1px solid;
+    color: white;
+}
+
+/* Landen overzicht CSS code */
+#landenoverzicht_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.landentable_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#landentable_body {
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-bottom: 1.5rem;
+
     border: black 1px solid;
 }
+#landenoverzicht_a_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#landenoverzicht_a {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #DD4040;
+    border: black 1px solid;
+    color: white;
+}
+#landenoverzicht_main {
+    min-height: 78.7vh;
+}
+
