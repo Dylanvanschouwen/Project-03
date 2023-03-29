@@ -61,7 +61,7 @@ ul {
 .list_boven {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 60%;
     justify-content: space-between;
     margin-left: 13vw;
     z-index: 5;
@@ -134,7 +134,6 @@ ul {
 .categorie_btn_c {
     display: flex;
     padding: 0.5rem;
-    margin-top: 0.3rem;
 }
 .a_btn_1 {
     border-top: solid #DD4040 1px;
@@ -185,7 +184,6 @@ ul {
 .categorie_btn_p {
     display: flex;
     padding: 0.5rem;
-    margin-top: 0.3rem;
 }
 .a_btn_1 {
     border-top: solid #DD4040 1px;
