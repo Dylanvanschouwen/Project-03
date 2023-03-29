@@ -496,6 +496,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .productklacht_action_container table {
     border: black 1px solid;
     min-height: 20rem;
+    margin-bottom: 1.5rem;
 }
 .productklacht_action_container td {
     height: 2.5rem;
@@ -524,3 +525,44 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black 1px solid;
     color: white;
 }
+
+/* Landen overzicht CSS code */
+#landenoverzicht_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.landentable_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#landentable_body {
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-bottom: 1.5rem;
+
+    border: black 1px solid;
+}
+#landenoverzicht_a_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#landenoverzicht_a {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #DD4040;
+    border: black 1px solid;
+    color: white;
+}
+#landenoverzicht_main {
+    min-height: 78.7vh;
+}
+

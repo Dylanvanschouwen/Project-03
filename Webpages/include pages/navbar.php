@@ -9,7 +9,7 @@
         <li><a href="index.php">Homepage</a></li>
         <li><a href="">Webshop</a></li>
         <li><a href="">Leveranciers</a></li>
-        <li><a href="">Landen</a></li>
+        <li><a href="landenoverzicht.php">Landen</a></li>
         <li><a href="Retour policy.php">Bezorgen en retour</a></li>
         <li><a href="klachten.php">Klachten en complimenten</a></li>
         <li><a href="overbedrijf.php">Over ons bedrijf</a></li>

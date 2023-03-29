@@ -40,7 +40,7 @@ function printtable() {
     echo "<tr><th>Product: </th><td>" . $_POST["product_naam"] . "</td></tr>";
     echo "<tr><th>Het probleem: </th><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
     echo "<tr><th>De oplossing: </th><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
-    echo "</table></div><br>";
+    echo "</table></div>";
 }
 
 function queryinsert($conn) {
@@ -60,9 +60,9 @@ function queryinsert($conn) {
 printtable();
 $conn = connectdb();
 
-// if (isset($_POST["submit_btn"])) {
-//     queryinsert($conn);
-// }
+if (isset($_POST["submit_btn"])) {
+    queryinsert($conn);
+}
 
 ?>
 
