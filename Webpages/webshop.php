@@ -46,10 +46,10 @@ function queryprint($read) {
         echo "<tr>";
         echo "<td>" . $data[''] . "</td>";
         echo "</tr>";
-        // SELECT producten.idproduct, producten.productnaam, producten.prijs, leveranciers.leveranciernaam, categories.idcategorie
-FROM producten
-INNER JOIN leveranciers ON leveranciers.idleverancier = producten.leveranciers_idleverancier
-INNER JOIN categories ON categories.idcategorie = producten.categories_idcategorie
+//         SELECT producten.idproduct, producten.productnaam, producten.prijs, leveranciers.leveranciernaam, categories.idcategorie
+// FROM producten
+// INNER JOIN leveranciers ON leveranciers.idleverancier = producten.leveranciers_idleverancier
+// INNER JOIN categories ON categories.idcategorie = producten.categories_idcategorie
     }
     echo "</table></div>";
 }
