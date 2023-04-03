@@ -26,36 +26,46 @@ function connectdb() {
         $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
         // echo "Connection succesful!";
         queryread($db);
-        return $db;
     } catch (PDOException $e) {
         die("ERROR: " . $e->getMessage());
     }
 }
 
 function queryread($db) {
-    $read = $db->prepare("");
+    $read = $db->prepare("SELECT producten.idproduct AS 'ID', producten.productnaam AS Product, producten.prijs AS Prijs, leveranciers.leveranciernaam AS Leverancier, categorieën.categorienaam AS Categorie FROM producten INNER JOIN leveranciers ON leveranciers.idleverancier = producten.leveranciers_idleverancier INNER JOIN categorieën ON categorieën.idcategorie = producten.categorieën_idcategorie ORDER BY categorieën.categorienaam ASC;");
     $read->execute();
-    queryprint($read);
-    return $read;
+    $result = $read->fetchALL(PDO::FETCH_ASSOC);
+    queryprint($result);
 }
 
-function queryprint($read) {
-    echo "<div class='productentable_container'><table id='productentable_body'>";
-    echo "<th></th><th></th><th></th><th></th>";
-    foreach ($read as $data) {
-        echo "<tr>";
-        echo "<td>" . $data[''] . "</td>";
-        echo "</tr>";
-//         SELECT producten.idproduct, producten.productnaam, producten.prijs, leveranciers.leveranciernaam, categories.idcategorie
-// FROM producten
-// INNER JOIN leveranciers ON leveranciers.idleverancier = producten.leveranciers_idleverancier
-// INNER JOIN categories ON categories.idcategorie = producten.categories_idcategorie
+function queryprint($result) {
+    // Universal Database result printer
+    $table = "<div class='productentable_container'><table id='productentable_body'";
+
+    $headers = array_keys($result[0]);
+    $table .= "<tr>";
+    foreach($headers as $header){
+        $table .= "<th>" . $header . "</th>";  
     }
-    echo "</table></div>";
+    $table .= "<th></th>"; 
+    $table .= "</tr>";
+
+    foreach ($result as $data) {
+        $table .= "<tr>";
+        foreach ($data as $info) {
+            $table .= "<td>" . $info . "</td>";
+        }        $table .= "<td><form method='POST' action='#'>
+        <input type='submit' value='Bekijken'>
+        </form></td>";
+        $table .= "</tr>";
+    }
+
+    $table .= "</table></div>";
+    echo $table;
 }
 
 // Execute functions
-$db = connectdb();
+connectdb();
 
 ?>
 

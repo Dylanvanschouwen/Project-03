@@ -1,11 +1,11 @@
-/* General settings */
+/* General settings -> Jack */
 * {
     margin: 0;
     padding: 0;
     size: 0;
 }
-/* Homepage CCS code */
-/* Upper side of homepage */
+/* Homepage CCS code -> Jack */
+/* Upper side of homepage -> Jack */
 .home_upper {
     display: flex;
     height: 40.5vh;
@@ -21,7 +21,7 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
-/* Lower side of homepage */
+/* Lower side of homepage _> Jack */
 .home_lower {
     height: 40.5vh;
     display: flex;
@@ -47,7 +47,7 @@
     width: 13vw;
     margin-left: 23vw;
 }
-/* Home Images CSS */
+/* Home Images CSS -> Jack */
 #home_IMGlogo {
     position: absolute;
     width: 25vw;
@@ -69,7 +69,7 @@
 }
 
 
-/* Overbedrijf tussen pagina CSS */
+/* Overbedrijf tussen pagina CSS -> Jack */
 #overons_main {
     min-height: 75.8vh;
 }
@@ -102,7 +102,7 @@
 }
 
 
-/* Eco vriendelijkheid */
+/* Eco vriendelijkheid -> Jack */
 #eco_main {
     min-height: 0;
 }
@@ -147,7 +147,7 @@
     margin-top: 3vh;
 }
 
-/* Medewerkers CSS */
+/* Medewerkers CSS -> Amin */
 #container {
     padding: 10px 10px 0px 10px;
     bottom: 0;
@@ -192,7 +192,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 250px;
 
 }
-/* Klachten tussen pagina CSS */
+/* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
 }
@@ -222,7 +222,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5vh;
 }
 
-/*Retour policy codes*/
+/*Retour policy codes -> Dylan */
 
 #RP_main {
     margin-top: 20px;
@@ -439,7 +439,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 1;
 }
 
-/* Geschiedenis en doelstellingen van bedrijf */
+/* Geschiedenis en doelstellingen van bedrijf -> Dylan */
 #Blue{
     height:50px;
     width: 100vw;
@@ -450,7 +450,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 80px;
 
 }
-/* Product klachten CSS code */
+/* Product klachten CSS code -> Jack */
 .productklacht_form {
     display: flex;
     flex-direction: column;
@@ -526,7 +526,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-/* Landen overzicht CSS code */
+/* Landen overzicht CSS code -> Jack */
 #landenoverzicht_h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -566,3 +566,40 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height: 78.7vh;
 }
 
+/* Webshop CSS code -> Jack */
+.webshop_main {
+    min-height: 78.7vh;
+}
+#webshop_h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+}
+
+.productentable_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#productentable_body {
+    max-width: 100vw;
+    display: flex;
+    background-color: #DD4040;
+    color: white;
+    border-collapse: collapse;
+    border: black solid 1px;
+}
+#productentable_body th {
+    padding: 0.7rem;
+    border: black solid 1px;
+    font-size: 25px;
+    background-color: gray;
+}
+#productentable_body td {
+    font-size: 20px;
+    border: black solid 1px;
+    padding: 0.5rem;
+}

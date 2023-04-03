@@ -1,11 +1,11 @@
-/* standard css */
+/* standard css -> Jack */
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-/* Navbar css */
+/* Navbar css -> Jack */
 .nav_container {
     background-color: #DF0000;
     min-height: 15vh;
@@ -13,7 +13,7 @@
     top: 0;
 }
 
-/* IMG CSS */
+/* IMG CSS  -> Jack */
 #IMGlogo {
     position: absolute;
     width: 12vw;
@@ -43,7 +43,7 @@
     width: 5vw;
 }
 
-/* General CSS */
+/* General CSS  -> Jack */
 a {
     text-decoration: none;
     color: black;
@@ -52,7 +52,7 @@ ul {
     list-style-type: none;
 }
 
-/* Upper side navbar */
+/* Upper side navbar  -> Jack */
 .list_boven_container {
     display: flex;
     flex-direction: row;
@@ -74,7 +74,7 @@ ul {
     margin-top: 1.5vh;
 }
 
-/* Lower side navbar */
+/* Lower side navbar  -> Jack */
 .list_onder {
     display: flex;
     flex-direction: row;
@@ -105,7 +105,7 @@ ul {
     position: relative;
 }
 
-/* Categories dropdown shit */
+/* Categories dropdown shit  -> Jack */
 .categorie_dropdown_c {
     border: solid #DD4040 3px;
     border-radius: 15px;
@@ -154,7 +154,7 @@ ul {
     color: black;
 }
 
-/* Personeel opties dropdown settings */
+/* Personeel opties dropdown settings  -> Jack */
 .categorie_dropdown_p {
     border: solid #DD4040 3px;
     border-radius: 15px;
@@ -183,7 +183,6 @@ ul {
 }
 .categorie_btn_p {
     display: flex;
-    padding: 0.5rem;
 }
 .a_btn_1 {
     border-top: solid #DD4040 1px;
@@ -204,7 +203,7 @@ ul {
     color: black;
 }
 
-/* Footer CSS */
+/* Footer CSS  -> Jack */
 footer {
     display: flex;
     background-color: #DF0000;
