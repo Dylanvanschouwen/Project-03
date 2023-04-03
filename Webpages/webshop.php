@@ -47,16 +47,17 @@ function queryprint($result) {
     foreach($headers as $header){
         $table .= "<th>" . $header . "</th>";  
     }
-    $table .= "<th></th>"; 
+    // $table .= "<th></th>"; 
     $table .= "</tr>";
 
     foreach ($result as $data) {
         $table .= "<tr>";
         foreach ($data as $info) {
             $table .= "<td>" . $info . "</td>";
-        }        $table .= "<td><form method='POST' action='#'>
-        <input type='submit' value='Bekijken'>
-        </form></td>";
+        }       
+        // $table .= "<td><form method='POST' action='#'>
+        // <input type='submit' value='Bekijken'>
+        // </form></td>";
         $table .= "</tr>";
     }
 

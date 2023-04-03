@@ -1,3 +1,4 @@
+<!-- Author: Amin -->
 <?php
 
 $servername = "localhost";
