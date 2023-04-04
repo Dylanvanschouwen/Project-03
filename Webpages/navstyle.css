@@ -154,7 +154,7 @@ ul {
     color: black;
 }
 
-/* Personeel opties dropdown settings  -> Jack */
+/* Personeel opties dropdown settings -> Jack */
 .categorie_dropdown_p {
     border: solid #DD4040 3px;
     border-radius: 15px;
@@ -184,7 +184,6 @@ ul {
 .categorie_btn_p {
     display: flex;
     padding: 0.5rem;
-    margin-top: 0.3rem;
 }
 .a_btn_1 {
     border-top: solid #DD4040 1px;
