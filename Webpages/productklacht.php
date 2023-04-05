@@ -45,15 +45,15 @@ include "../Webpages/include pages/navbar.php";
             <br>
 
             <label for="product_naam">Over welk product gaat het?</label>
-            <input type="text" name="product_naam" class="productklacht_text">
+            <input type="text" name="product_naam">
             <br>
 
             <label for="klacht_beschrijving">Wat is uw klacht over dit product?</label>
-            <input type="text" name="klacht_beschrijving" class="productklacht_text">
+            <textarea type="textarea" name="klacht_beschrijving" class="productklacht_text"></textarea>
             <br>
 
             <label for="klacht_oplossing">Hoe wilt u dat wij dit oplossen?</label>
-            <input type="text" name="klacht_oplossing" class="productklacht_text">
+            <textarea name="klacht_oplossing" class="productklacht_text"></textarea>
             <br>
 
             <br>

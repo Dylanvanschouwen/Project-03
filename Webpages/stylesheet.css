@@ -1,11 +1,11 @@
-/* General settings */
+/* General settings -> Jack */
 * {
     margin: 0;
     padding: 0;
     size: 0;
 }
-/* Homepage CCS code */
-/* Upper side of homepage */
+/* Homepage CCS code -> Jack */
+/* Upper side of homepage -> Jack */
 .home_upper {
     display: flex;
     height: 40.5vh;
@@ -21,7 +21,7 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
-/* Lower side of homepage */
+/* Lower side of homepage _> Jack */
 .home_lower {
     height: 40.5vh;
     display: flex;
@@ -47,7 +47,7 @@
     width: 13vw;
     margin-left: 23vw;
 }
-/* Home Images CSS */
+/* Home Images CSS -> Jack */
 #home_IMGlogo {
     position: absolute;
     width: 25vw;
@@ -56,7 +56,7 @@
     border-radius: 50px;
     margin-left: 5vw;
     margin-top: 10vh;
-    z-index: 2;
+    z-index: 5;
 }
 #home_IMGproduct {
     position: absolute;
@@ -69,7 +69,7 @@
 }
 
 
-/* Overbedrijf tussen pagina CSS */
+/* Overbedrijf tussen pagina CSS -> Jack */
 #overons_main {
     min-height: 75.8vh;
 }
@@ -102,7 +102,7 @@
 }
 
 
-/* Eco vriendelijkheid */
+/* Eco vriendelijkheid -> Jack */
 #eco_main {
     min-height: 0;
 }
@@ -147,7 +147,7 @@
     margin-top: 3vh;
 }
 
-/* Medewerkers CSS */
+/* Medewerkers CSS -> Amin */
 #container {
     padding: 10px 10px 0px 10px;
     bottom: 0;
@@ -192,7 +192,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 250px;
 
 }
-/* Klachten tussen pagina CSS */
+/* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
 }
@@ -222,7 +222,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5vh;
 }
 
-/*Retour policy codes*/
+/*Retour policy codes -> Dylan */
 
 #RP_main {
     margin-top: 20px;
@@ -469,14 +469,79 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 2rem;
 }
 .productklacht_text {
-    height: 4rem;
+    height: 3rem;
 }
 .productklacht_gender {
     display: flex;
     flex-direction: row;
 }
 
-#productklacht_action {
+#productklacht_action_h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.productklacht_action_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.productklacht_action_container table {
+    border: black 1px solid;
+    min-height: 20rem;
+    margin-bottom: 1.5rem;
+}
+.productklacht_action_container td {
+    height: 2.5rem;
+    text-align: left;
+    width: 20rem;
+    word-wrap: break-word;
+    max-width: 80rem;
+}
+.productklacht_action_container th {
+    text-align: left;
+    width: 10rem;
+}
+#productklacht_action_main {
+    min-height: 78.7vh;
+}
+#productklachtaction_a_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#productklachtaction_a {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #DD4040;
+    border: black 1px solid;
+    color: white;
+}
+
+/* Landen overzicht CSS code -> Jack */
+#landenoverzicht_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.landentable_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#landentable_body {
+    width: 50%;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-bottom: 1.5rem;
+
     border: black 1px solid;
 }
 

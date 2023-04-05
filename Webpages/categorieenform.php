@@ -6,29 +6,57 @@ table, th, td {
 </style>
 <body>
 
-<h2>A basic HTML table</h2>
 
 <table style="width:100%">
   <tr>
-    <th>Categorieen</th>
+    <th>categorieen</th>
     <th>id</th>
-    <th>producten</th>
   </tr>
   <tr>
-    <td>elektronica</td>
+    <td>Computermuizen</td>
     <td>Producten_idcategorie</td>
-    <td>1213</td>
+   
   </tr>
   <tr>
-    <td>koffie</td>
-    <td>leveranciers_idleverancier</td>
     <td>wasmachines</td>
+    <td>leveranciers_idleverancier</td>
+    
+  </tr>
+  
+  <td>Schermen</td>
+  <tr>
+  </tr>
+  
+  <td>Koffiezetapperaten</td>
+  <tr>
+  </tr>
+  
+  <td>Toetsenborden</td>
+  <tr>
+  </tr>
+  
+  <td>Tv's</td>
+  <tr>
+  </tr>
+  
+  <td>Koelkasten</td>
+  <tr>
+  </tr>
+  
+  <td>Laptops</td>
+  <tr>
+  </tr>
+  
+  <td>Smartphones</td>
+  <tr>
   </tr>
   <td></td>
+  <td></td>
+  <td>Tablets</td>
   <tr>
 </table>
 
-<p>To understand the example better, we have added borders to the table.</p>
+
 
 </body>
 </html>

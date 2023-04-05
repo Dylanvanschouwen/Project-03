@@ -10,11 +10,13 @@ include "../Webpages/include pages/head.php";
 include "../Webpages/include pages/navbar.php";
 ?>
 
+<!-- Main -->
+<main id="productklacht_action_main">
+    <!-- Main HTML -->
+    <div id="productklacht_action_h1">
+        <h1>Uw klacht is verstuurd naar onze medewerkers! Dit is wat er is opgestuurd:</h1>
+    </div>
 
-<!-- Main code -->
-<main>
-    <h1>De ingevulde informatie:</h1>
-</main>
 
 <!-- product complaint action page php code -->
 <?php
@@ -29,16 +31,16 @@ function connectdb() {
 }
 
 function printtable() {
-    echo "<table id='productklacht_action'>";
-    echo "<tr><td>Voornaam: </td><td>" . $_POST["f_name"] . "</td></tr>";
-    echo "<tr><td>Achternaam: </td><td>" . $_POST["l_name"] . "</td></tr>";
-    echo "<tr><td>Telefoonnummer: </td><td>" . $_POST["phone"] . "</td></tr>";
-    echo "<tr><td>Email: </td><td>" . $_POST["email"] . "</td></tr>";
-    echo "<tr><td>Gender: </td><td>" . $_POST["gender"] . "</td></tr><";
-    echo "<tr><td>Product: </td><td>" . $_POST["product_naam"] . "</td></tr>";
-    echo "<tr><td>Het probleem: </td><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
-    echo "<tr><td>De oplossing: </td><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
-    echo "</table><br>";
+    echo "<div class='productklacht_action_container'><table>";
+    echo "<tr><th>Voornaam: </th><td>" . $_POST["f_name"] . "</td></tr>";
+    echo "<tr><th>Achternaam: </th><td>" . $_POST["l_name"] . "</td></tr>";
+    echo "<tr><th>Telefoonnummer: </th><td>" . $_POST["phone"] . "</td></tr>";
+    echo "<tr><th>Email: </th><td>" . $_POST["email"] . "</td></tr>";
+    echo "<tr><th>Gender: </th><td>" . $_POST["gender"] . "</td></tr>";
+    echo "<tr><th>Product: </th><td>" . $_POST["product_naam"] . "</td></tr>";
+    echo "<tr><th>Het probleem: </th><td>" . $_POST["klacht_beschrijving"] . "</td></tr>";
+    echo "<tr><th>De oplossing: </th><td>" . $_POST["klacht_oplossing"] . "</td></tr>";
+    echo "</table></div>";
 }
 
 function queryinsert($conn) {
@@ -64,6 +66,11 @@ if (isset($_POST["submit_btn"])) {
 
 ?>
 
+<div id="productklachtaction_a_container">
+    <a href='./homepage.php' id="productklachtaction_a">Terug naar de homepage.</a>
+</div>
+
+</main>
 
 <!-- Include footer.html -->
 <?php
