@@ -440,16 +440,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Geschiedenis en doelstellingen van bedrijf */
-#Blue{
-    height:50px;
-    width: 100vw;
-    background-color: rgb(255, 255, 255);
+#H_main {
+    margin-top: 20px;
+    margin-left:30px;
 }
 
-#History_1{
-    margin-left: 80px;
-
-}
 /* Product klachten CSS code */
 .productklacht_form {
     display: flex;
@@ -482,5 +477,45 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #productklacht_action {
+    border: black 1px solid;
+}
+
+/* website klachten pagina */
+
+.WKlachten_header{
+    display:flex;
+    margin-left:37.5;
+}
+
+.Websiteklacht_form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 15%;
+}
+.WKlacht_header {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#WKlacht_submit {
+    background-color: #DD4040;
+    color: white;
+    height: 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-left: 25%;
+    border: black solid 2px;
+    margin-bottom: 2rem;
+}
+.WKlacht_text {
+    height: 4rem;
+}
+.WKlacht_gender {
+    display: flex;
+    flex-direction: row;
+}
+
+#WKlacht_action {
     border: black 1px solid;
 }
