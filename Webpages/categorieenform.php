@@ -3,8 +3,49 @@
 table, th, td {
   border:1px solid black;
 }
-</style>
-<body>
+
+  <html>
+  <style>
+  table, th, td {
+  border:1px solid black;
+}
+  </style>
+  </body>
+  </html>
+
+  <?php
+    if (isset($_POST['submit'])) {
+        $connection = new mysqli("localhost", "root", "", "mediamarkt");
+        $q = $connection->real_escape_string($_POST['q']);
+        $column = $connection->real_escape_string($_POST['column']);
+
+        if ($column == "" || ($column != "wasmachines" && $column != "lastName"))
+            $column = "wasmachines";
+
+        $sql = $connection->query("SELECT firstName FROM users WHERE $column LIKE '%$q%'");
+        if ($sql->num_rows > 0) {
+            while ($data = $sql->fetch_array())
+                echo $data['wasmachines'] . "<br>";
+        } else
+            echo "Your search query doesn't match any data!";
+    }
+?>
+<html>
+    <head>
+        <title>Filter</title>
+    </head>
+    <body>
+        <form method="post" action="search.php">
+            <input type="text" name="q" placeholder="Search Query...">
+            <select name="column">
+                <option value="">Select Filter</option>
+                <option value="categorien">wasmachines</option>
+                <option value="lastName">Last Name</option>
+            </select>
+            <input type="submit" name="submit" value="Find">
+        </form>
+    </body>
+</html>
 
 
 <table style="width:100%">
@@ -50,9 +91,7 @@ table, th, td {
   <td>Smartphones</td>
   <tr>
   </tr>
-  <td></td>
-  <td></td>
-  <td>Tablets</td>
+  <td>tablets</td>
   <tr>
 </table>
 
