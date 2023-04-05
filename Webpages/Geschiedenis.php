@@ -10,13 +10,8 @@ include "../Webpages/include pages/head.php";
 include "../Webpages/include pages/navbar.php";
 ?>
 
+<main id="H_main">
 
-<main>
-    <div id=Blue></div>
-    <section id=History_1>
     
-        <h1> Hi</h1>
-    </section>
-
 
 </main>

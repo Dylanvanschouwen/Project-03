@@ -4,7 +4,7 @@
         if(isset($_POST['btn_wzg'])){
             UpdateBier($_POST);
 
-            //header("location: update.php?$_POST[NR]");
+            header("location: crud_bieren.php");
             
 
         }

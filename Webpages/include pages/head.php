@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nep Mediamarkt</title>
-    <link rel="stylesheet" href="stylesheet.css?v=<?php echo time(); ?>"> <!-- standaard stylesheet -->
-    <link rel="stylesheet" href="navstyle.css"> <!-- Navbar specifieke stylesheet -->
+    <link rel="stylesheet" href="./stylesheet.css"> <!-- standaard stylesheet -->
+    <link rel="stylesheet" href="./navstyle.css"> <!-- Navbar stylesheet -->
+    <!-- ?v=<?php echo time(); ?> -->
 </head>
 <body>

@@ -1,4 +1,4 @@
-<?php
+<?php method: "post";
 // auteur: Wigmans
 // functie: algemene functies tbv hergebruik
  function ConnectDb(){
@@ -159,7 +159,7 @@ function PrintCrudBier($result){
             </form>" . "</td>";
 
         // Delete via linkje href
-        $table .= '<td><a href="delete_bier.php?biercode='.$row["biercode"].'">verwijder</a></td>';
+        $table .= '<td><a href="crud_bieren.php?biercode='.$row["biercode"].'">verwijder</a></td>';
         
         $table .= "</tr>";
     }
@@ -170,7 +170,7 @@ function PrintCrudBier($result){
 
 
 function UpdateBier($row){
-    echo "Update row<br>";
+    echo "Update row <br>";
 
     var_dump($row);
     //var_dump($row);
@@ -189,7 +189,29 @@ function UpdateBier($row){
     WHERE biercode = $row[biercode]";
 
     echo $sql;
-    exit;
+
+    $query = $conn->prepare($sql);
+    $query-> execute();
+}
+
+catch(PDOException $e){
+    echo "Connection failed: " . $e->getmessage();
+    }
+}
+
+function DeleteBier($row){
+    echo "delete row <br>";
+
+    var_dump($row);
+    //var_dump($row);
+    try{
+    // connect database
+    $conn = ConnectDb();
+    
+    // delete data uit de opgegeven table methode prepare
+    $sql = "DELETE * FROM bier";
+
+    echo $sql;
 
     $query = $conn->prepare($sql);
     $query-> execute();
