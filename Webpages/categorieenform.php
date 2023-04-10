@@ -2,7 +2,7 @@
 <style>
 table, th, td {
   border:1px solid black;
-}
+
 
   <html>
   <style>
@@ -19,13 +19,16 @@ table, th, td {
         $q = $connection->real_escape_string($_POST['q']);
         $column = $connection->real_escape_string($_POST['column']);
 
-        if ($column == "" || ($column != "wasmachines" && $column != "lastName"))
+        if ($column == "" || ($column != "wasmachines" && $column != ""))
             $column = "wasmachines";
+       if ($column == "" || ($column != "Computermuizen" && $column != ""))
+            $column = "Computermuizen";
 
-        $sql = $connection->query("SELECT firstName FROM users WHERE $column LIKE '%$q%'");
+        $sql = $connection->query("SELECT firstName FROM users WHERE $column LIKE ''");
         if ($sql->num_rows > 0) {
             while ($data = $sql->fetch_array())
                 echo $data['wasmachines'] . "<br>";
+                echo $data['Computermuizen'] . "<br>";
         } else
             echo "Your search query doesn't match any data!";
     }
@@ -36,7 +39,7 @@ table, th, td {
     </head>
     <body>
         <form method="post" action="search.php">
-            <input type="text" name="q" placeholder="Search Query...">
+            <input type="text" name="Filter" placeholder="Search Query...">
             <select name="column">
                 <option value="">Select Filter</option>
                 <option value="categorien">wasmachines</option>
