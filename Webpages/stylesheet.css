@@ -637,3 +637,33 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black solid 1px;
     padding: 0.5rem;
 }
+
+/* Bestellingen CSS code -> Jack */
+.bestelling_main_h1 {
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#bestelling_h1 {
+    text-align: center;
+}
+.bestelling_table_container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.bestelling_table {
+    border: black solid 1px;
+    border-collapse: collapse;
+    max-width: 80%;
+}
+.bestelling_table th {
+    border: black solid 1px;
+    background-color: gray;
+    color: white;
+    padding: 1rem;
+}
+.bestelling_table td {
+    border: black solid 1px;
+    padding: 0.5rem;
+}
