@@ -667,33 +667,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black solid 1px;
     padding: 0.5rem;
 }
-#bestellingen_main {
-    min-height: 78.6vh;
-}
-/* Categorieën toevoegen CSS code -> Jack */
-.cat_toevoeg_main {
-    min-height: 78.7vh;
-}
-.cat_toevoeg_h1_container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.cat_toevoeg_form_container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    font-size: 20px;
-}
-#cat_toevoeg_form {
-    display: flex;
-    flex-direction: column;
-}
-#submit_txt {
-    width: 100vw;
+/*Categorie*/
+.Categorie_Main{
     display: flex;
     justify-content: center;
-    font-size: 20px;
 }
+
