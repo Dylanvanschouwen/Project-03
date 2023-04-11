@@ -7,7 +7,7 @@
     <!-- Bovenste list -->
     <div class="list_boven_container">
         <ul class="list_boven">
-            <li><a href="index.php">Homepage</a></li>
+            <li><a href="homepage.php">Homepage</a></li>
             <li><a href="webshop.php">Webshop</a></li>
             <li><a href="">Leveranciers</a></li>
             <li><a href="landenoverzicht.php">Landen</a></li>
@@ -42,7 +42,7 @@
                     <a class="a_btn_1" href="">Klanten bekijken</a>
                     <a class="a_btn" href="">Klanten toevoegen</a>
                     <a class="a_btn" href="bestellingen.php">Bestellingen bekijken</a>
-                    <a class="a_btn" href="">Leveranciers toevoegen</a>
+                    <a class="a_btn" href="">Categorieën toevoegen</a>
                     <a class="a_btn_4" href="">Landen toevoegen</a>
                 </div>   
             </li>
