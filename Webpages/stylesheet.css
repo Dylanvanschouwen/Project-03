@@ -667,3 +667,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black solid 1px;
     padding: 0.5rem;
 }
+/*Categorie*/
+.Categorie_Main{
+    display: flex;
+    justify-content: center;
+}
+

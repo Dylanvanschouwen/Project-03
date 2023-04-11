@@ -33,12 +33,14 @@ else {
         <style>
             table,tr,th,td
             {
-                border: 1px solid black;
+                border: 2px solid black;
+                width: 60%;
+                height: 40px
             }
         </style>
     </head>
     <body>
-        
+        <main class="Categorie_Main">
         <form method="post" action="">
             <input type="text" name="valueToSearch" placeholder="Value To Search"><br><br>
             <input type="submit" name="search" value="Filter"><br><br>
@@ -61,8 +63,10 @@ else {
                 </tr>
             <?php endwhile;?>
         </table>
+            </main>
+        
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <?php
-      include "../Webpages/include pages/footer.php";?>
     </body>
+    <?php
+      include "../Webpages/include pages/footer.php";?>
 </html>
