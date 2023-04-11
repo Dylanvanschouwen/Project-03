@@ -13,7 +13,7 @@ include "../Webpages/include pages/navbar.php";
 
 
 <!-- Main HTML code -->
-<main>
+<main id="bestellingen_main">
 <div class="bestelling_main_h1">
     <h1 id="bestelling_h1">Alle gemaakte bestellingen:</h1>
 </div>
@@ -23,18 +23,12 @@ include "../Webpages/include pages/navbar.php";
 function connectdb() {
     try {
         $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
-        getdata($db);
         return $db;
     }
     catch (PDOException $e) {
         die("ERROR: " . $e->GetMessage());
     }
 
-}
-
-function totalprice($db) {
-    $total = $db->prepare("SELECT bestellingen_has_producten.bestellingen_idbestelling, sum(producten.prijs) FROM bestellingen_has_producten INNER JOIN bestellingen ON bestellingen.idbestelling = bestellingen_has_producten.bestellingen_idbestelling INNER JOIN producten ON producten.idproduct = bestellingen_has_producten.producten_idproduct GROUP BY bestellingen_has_producten.bestellingen_idbestelling");
-    
 }
 
 function getdata($db) {
@@ -52,7 +46,6 @@ function printtable($result) {
     foreach ($headers as $header) {
         $table .= "<th>" . $header . "</th>";
     }
-    $table .= "<th>Totaal Prijs</th>";
     $table .= "</tr>";
 
     foreach ($result as $data) {
@@ -60,10 +53,8 @@ function printtable($result) {
         foreach ($data as $cell) {
             $table .= "<td>" . $cell . "</td>";
         }
-        $table .= "<td></td>";
         $table .= "</tr>";
     }
-
 
     $table .= "</table></div><br>";
     echo $table;
@@ -72,6 +63,7 @@ function printtable($result) {
 
 
 $db = connectdb();
+getdata($db);
 
 ?>
 
