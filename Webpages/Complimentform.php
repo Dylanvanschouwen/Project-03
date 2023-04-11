@@ -21,13 +21,6 @@ include "../Webpages/include pages/navbar.php";
     <input type="submit" name="knop" id="productklacht_submit">
 </form>
 
-
-
-
-
-
-
-
 <!-- Include footer.html -->
 <?php
 include "../Webpages/include pages/footer.php";

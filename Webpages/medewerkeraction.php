@@ -23,7 +23,7 @@ $dbname = "mediamarkt";
     $probleem = $_POST["probleem"];
     $Onderwerp = $_POST["Onderwerp"];
     // INSERT INTO `medewerkerklachten` (`idmedewerkerklachten`, `volledigenaam`, `straatnaam`, `huisnummer`, `klachtdatum`, `contactmanier`, `medewerker`, `probleem`, `oplossing`) VALUES ('', 'naam', 'straat', 'huis', '2023-03-02', 'online', 'DYlan', 'bla', 'asdasda');
-    $queryupdate = $conn->prepare("INSERT INTO medewerkerklachten (idmedewerkerklachten, klachtdatum, volledigenaam, medewerker, straatnaam, huisnummer, contactmanier, probleem, Onderwerp) VALUES ('NULL', '$klachtdatum', '$volledigenaam', 'asd', 'agw', 'ajsjd', 'whds', 'usdw', 'jsudw')");
+    $queryupdate = $conn->prepare("INSERT INTO medewerkerklachten (idmedewerkerklachten, klachtdatum, volledigenaam, medewerker, straatnaam, huisnummer, contactmanier, probleem, Onderwerp) VALUES ('NULL', '$klachtdatum', '$volledigenaam', '$volledigenaam', '$medewerker', '$straatnaam', '$huisnummer', '$contactmanier', '$probleem, '$Onderwerp'')");
     $queryupdate->execute();
   }   
 
