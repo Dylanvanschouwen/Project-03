@@ -12,15 +12,17 @@ include "../Webpages/include pages/navbar.php";
 
 <html>
 <!-- Main HTML code -->
-<main id="leveranciers_main">
-<div class="leveranciers_main_h1">
-    <h1 id="leveranciers_h1">Overzicht van alle leveranciers.</h1>
+<main id="producten-main">
+<div class="producten-main-h1">
+    <h1 id="producten-h1">Overzicht van alle producten.</h1>
 </div>
 
 
 <!-- Main PHP code -->
+<!DOCTYPE html>
+
 <body>
-	<main class="Leveranciers-main">
+	<main class="Producten-main">
 		<?php
 
 		function connectdb() {
@@ -35,15 +37,15 @@ include "../Webpages/include pages/navbar.php";
 		}
 
 		function getdata($db) {
-		    $queryread = $db->prepare("SELECT * FROM leveranciers");
+		    $queryread = $db->prepare("SELECT * FROM producten");
 		    $queryread->execute();
 		    $result = $queryread->fetchAll(PDO::FETCH_ASSOC);
 		    printtable($result);
 		}
 
 		function printtable($result) {
+		    $table = "<div class= 'producten_table_div'><table class='producten_table'>";
 		    $headers = array_keys($result[0]);
-            $table = "<div class= 'leveranciers-table-div'> <table class='leveranciers-table'>";
 		    $table .= "<tr>";
 		    foreach ($headers as $header) {
 		        $table .= "<th>" . $header . "</th>";

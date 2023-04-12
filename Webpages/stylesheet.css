@@ -673,3 +673,50 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
 }
 
+/*leveranciers CSS code -> Dylan */
+
+.leveranciers_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.leveranciers_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.leveranciers-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#leveranciers-h1 {
+    text-align: center;
+}
+
+/*producten CSS code -> Dylan */
+
+
+.producten_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.producten_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.producten-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#producten-h1 {
+    text-align: center;
+}
+
