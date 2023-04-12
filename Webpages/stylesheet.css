@@ -725,3 +725,99 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 2rem;
     margin-bottom: 1rem;
 }
+
+/*leveranciers CSS code -> Dylan */
+.leveranciers_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.leveranciers_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.leveranciers-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#leveranciers-h1 {
+    text-align: center;
+}
+
+/*producten CSS code -> Dylan */
+.producten_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.producten_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.producten-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#producten-h1 {
+    text-align: center;
+}
+
+/* Categorie CRUD CSS code -> Jack */
+.cat_main {
+    min-height: 80.8vh;
+}
+.cat_h1_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#cat_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat_table_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.cat_table {
+    width: 50%;
+    border: black solid 1px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+.cat_table th {
+    background-color: gray;
+    border: black solid 1px;
+    border-collapse: collapse;
+    color: white;
+}
+.cat_table td {
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+.cat_table_btn {
+    width: 100%;
+}
+.cat_table td {
+    background-color: #DD4040;
+    color: white;
+}
+.cat_toevoeg_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#cat_toevoeg_btn {
+    font-size: 20px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
