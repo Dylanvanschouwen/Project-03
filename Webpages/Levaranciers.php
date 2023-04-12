@@ -12,9 +12,9 @@ include "../Webpages/include pages/navbar.php";
 
 <html>
 <!-- Main HTML code -->
-<main id="leveranciers_main">
-<div class="leveranciers_main_h1">
-    <h1 id="leveranciers_h1">Overzicht van alle leveranciers.</h1>
+<main id="leveranciers-main">
+<div class="leveranciers-main-h1">
+    <h1 id="leveranciers-h1">Overzicht van alle leveranciers.</h1>
 </div>
 
 

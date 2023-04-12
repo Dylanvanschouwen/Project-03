@@ -561,42 +561,10 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* website klachten pagina -> Dylan */
-.WKlachten_header{
-    display:flex;
-    margin-left:37.5;
-}
-
-.Websiteklacht_form {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 15%;
-}
-.WKlacht_header {
-    text-align: center;
+#websiteklachten-main {
+    width: 100vw;
     margin-top: 1rem;
     margin-bottom: 2rem;
-}
-#WKlacht_submit {
-    background-color: #DD4040;
-    color: white;
-    height: 2rem;
-    font-size: 1.5rem;
-    width: 50%;
-    margin-left: 25%;
-    border: black solid 2px;
-    margin-bottom: 2rem;
-}
-.WKlacht_text {
-    height: 4rem;
-}
-.WKlacht_gender {
-    display: flex;
-    flex-direction: row;
-}
-
-#WKlacht_action {
-    border: black 1px solid;
 }
 
 /* Webshop CSS code -> Jack */
@@ -675,13 +643,19 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 /*leveranciers CSS code -> Dylan */
 
-.leveranciers_table_div {
+#leveranciers-main {
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.leveranciers-table-div {
     width: 80%;
     justify-content: center;
     display: flex;
+    text-size-adjust: 80px;
 }
 
-.leveranciers_table{
+.leveranciers-table{
     border:red solid 5px;
     max-width:80%;
     margin-bottom: 80px;
@@ -692,12 +666,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
     margin-bottom: 50px;
 }
-#leveranciers-h1 {
-    text-align: center;
-}
 
 /*producten CSS code -> Dylan */
 
+#producten-main {
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 .producten_table_div {
     width: 80%;
