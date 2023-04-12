@@ -15,7 +15,7 @@ include "../Webpages/include pages/navbar.php";
     <h1 class="Medewerker_h1">Hallo welkom op de Medewerkers pagina</h1>
 
 
-    <section>
+    <section class="medewerker">
             <img src="./IMAGES/blankprofielpic.png" alt="Amin" id="amin">
             <img src="./IMAGES/blankprofielpic.png" alt="Amin" id="jack">
             <img src="./IMAGES/blankprofielpic.png" alt="Amin" id="dylan">

@@ -148,6 +148,8 @@
 
 /* Medewerkers CSS -> Amin */
 #container {
+    display: flex;
+    text-align: center;
     height: 70px;
     margin: 30px;
     background: #fff;
@@ -159,24 +161,15 @@ justify-content: center;
 margin-top: 7vw;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#amin {
-    display: absolute;
-    align-items: center;
-    height: 65vh;
-    width: 30vw;
-    margin-left: 20px;
-    margin-top: 200px;
+.medewerker{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 500px;
+    flex-direction: row;
+    width: 25vw;
+    height: 40vh;
 }
 
-#dylan{
-    Display: absolute;
-    align-items: center;
-    height: 50%;
-    width: 30%;
-    margin-left: 20px;
-    margin-top: 250px;
-
-}
 /* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
