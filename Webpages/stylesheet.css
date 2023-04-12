@@ -149,10 +149,8 @@
 
 /* Medewerkers CSS -> Amin */
 #container {
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    height: 20px;
-    margin-top: 300px;
+    height: 70px;
+    margin: 30px;
     background: #fff;
 }
 
@@ -166,32 +164,32 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 
 }
-#amin{
-   display: absolute;
-   height: 50%;
-   width: 30%;
-   margin-left: 35px;
-   margin-right: 4px;
-   margin-top: 200px;
-}
-#jack{
-    Display: absolute;
+#amin {
+    display: absolute;
     align-items: center;
-    height: 50%;
-    width: 30%;
+    height: 65vh;
+    width: 30vw;
     margin-left: 20px;
-    margin-top: 200px;
-}
-
-#dylan{
-    Display: absolute;
-    align-items: center;
-    height: 50%;
-    width: 30%;
-    margin-left: 20px;
-    margin-top: 250px;
-
-}
+    margin-top: 10px; /* decreased from 20px */
+ }
+ 
+ #jack {
+     display: absolute;
+     align-items: center;
+     height: 65vh;
+     width: 30vw;
+     margin-left: 20px;
+     margin-top: 50px; /* decreased from 200px */
+ }
+ 
+ #dylan {
+     display: absolute;
+     align-items: center;
+     height: 65vh;
+     width: 30vw;
+     margin-left: 20px;
+     margin-top: 100px; /* decreased from 250px */
+ }
 /* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
