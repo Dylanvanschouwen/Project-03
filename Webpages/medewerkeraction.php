@@ -21,9 +21,9 @@ $dbname = "mediamarkt";
     $huisnummer = $_POST["huisnummer"];
     $medewerker = $_POST["medewerker"];
     $probleem = $_POST["probleem"];
-    $oplossing = $_POST["oplossing"];
+    $Onderwerp = $_POST["Onderwerp"];
     // INSERT INTO `medewerkerklachten` (`idmedewerkerklachten`, `volledigenaam`, `straatnaam`, `huisnummer`, `klachtdatum`, `contactmanier`, `medewerker`, `probleem`, `oplossing`) VALUES ('', 'naam', 'straat', 'huis', '2023-03-02', 'online', 'DYlan', 'bla', 'asdasda');
-    $queryupdate = $conn->prepare("INSERT INTO medewerkerklachten (idmedewerkerklachten, klachtdatum, volledigenaam, medewerker, straatnaam, huisnummer, contactmanier, probleem, oplossing) VALUES ('NULL', '$klachtdatum', '$volledigenaam', 'asd', 'agw', 'ajsjd', 'whds', 'usdw', 'jsudw')");
+    $queryupdate = $conn->prepare("INSERT INTO medewerkerklachten (idmedewerkerklachten, klachtdatum, volledigenaam, medewerker, straatnaam, huisnummer, contactmanier, probleem, Onderwerp) VALUES ('NULL', '$klachtdatum', '$volledigenaam', '$volledigenaam', '$medewerker', '$straatnaam', '$huisnummer', '$contactmanier', '$probleem, '$Onderwerp'')");
     $queryupdate->execute();
   }   
 
@@ -35,7 +35,7 @@ $dbname = "mediamarkt";
     $huisnummer = $_POST["huisnummer"];
     $medewerker = $_POST["medewerker"];
     $probleem = $_POST["probleem"];
-    $oplossing = $_POST["oplossing"];
+    $Onderwerp = $_POST["Onderwerp"];
   }
 
     echo "naam: ", $volledigenaam, "<br>";
@@ -45,5 +45,5 @@ $dbname = "mediamarkt";
     echo "Huisnummer: ",  $huisnummer, "<br>";
     echo "Medewerker: ",  $medewerker, "<br>";
     echo "Probleem: ",  $probleem, "<br>";
-    echo "Oplossing: ",  $oplossing, "<br>";
+    echo "Onderwerp: ",  $Onderwerp, "<br>";
     
