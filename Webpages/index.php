@@ -22,12 +22,12 @@ include "../Webpages/include pages/navbar.php";
 </section>
 
 <section class="home_lower">
-    <img src="./IMAGES/elementor-placeholder-image.png" alt="Product foto" id="home_IMGproduct">
+    <img src="./IMAGES/mouse.png" alt="Product foto" id="home_IMGproduct">
     <section class="home_lowercrap">
-        <h2>Random product naam</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget augue mattis, lacinia quam id, congue augue. Aenean nisl ligula, eleifend a ipsum vel, commodo tristique metus. Donec varius hendrerit tortor eu commodo. Mauris eget neque sit amet nibh accumsan pharetra sit amet vitae lorem. Pellentesque vestibulum rutrum vulputate.</p>
-        <a href="" class="home_links" id="home_link1">Link naar het product</a>
-        <a href="" class="home_links" id="home_link2">Link naar de webshop</a>
+        <h2>De nieuwste gaming muis!</h2>
+        <p>De nieuwste ElecLife gaming muis voor de echte gamers onders ons! Met een dpi range tot wel 400!!! Speciaal voor jullie in de korting voor maar 65 euro! Haal hem nu!!</p>
+        <br>
+        <a href="webshop.php" class="home_links" id="home_link2">Link naar de webshop</a>
     </section>
 </section>
 </main>

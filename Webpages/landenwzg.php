@@ -1,4 +1,4 @@
-<!-- Category change data action page -->
+<!-- Country change data action page -->
 <!-- Author: Jack -->
 
 <!-- Include head.html -->
@@ -14,7 +14,7 @@ include "../Webpages/include pages/navbar.php";
 <!-- Main HTML code -->
 <main class="cat_wzg_main">
 <div class="cat_wzg_h1_cont">
-    <h1>Een categorie wijzigen</h1>
+    <h1>Een land wijzigen</h1>
 </div>
 
 <!-- Main PHP code -->
@@ -34,7 +34,7 @@ function connectdb($id) {
 // Get category data from database
 function getcategory($db, $id) {
     if (isset($id)) {
-        $query = $db->prepare("SELECT categorienaam FROM categorieën WHERE idcategorie = $id");
+        $query = $db->prepare("SELECT landnaam, afkortingnaam FROM landen WHERE idland = $id");
         $query->execute();
         $result = $query->fetchALL(PDO::FETCH_ASSOC);
         printform($result, $id);
@@ -43,15 +43,20 @@ function getcategory($db, $id) {
 
 // Print data inside form
 function printform($result, $id) {
-    $name = $result[0]["categorienaam"];
+    $name = $result[0]["landnaam"];
+    $afk = $result[0]["afkortingnaam"];
     $form = "<div class='cat_wzg_form'><form method='POST'>";
 
-    $form .= "<label for='cat_id'>Categorie ID NIET AANPASSEN!: </label>";
-    $form .= "<input type=''text' name='cat_id' value='$id'>";
+    $form .= "<label for='landid'>Land ID NIET AANPASSEN!: </label>";
+    $form .= "<input type=''text' name='landid' value='$id'>";
     $form .= "<br>";
 
-    $form .= "<label for='cat_name'>Categorie naam: </label>";
-    $form .= "<input type=''text' name='cat_name' value='$name'>";
+    $form .= "<label for='cat_name'>Landnaam: </label>";
+    $form .= "<input type=''text' name='country_name' value='$name'>";
+    $form .= "<br>";
+
+    $form .= "<label for='cat_name'>Afkorting landnaam: </label>";
+    $form .= "<input type=''text' name='country_afkorting' value='$afk'>";
     $form .= "<br><br>";
 
     $form .= "<input type='submit' name='submit_btn' value='Wijzigen'>";
@@ -63,15 +68,16 @@ function printform($result, $id) {
 
 function updatedb() {
     $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
-    $id = $_POST["cat_id"];
-    $name = $_POST["cat_name"];
-    $update = $db->prepare("UPDATE `categorieën` SET `categorienaam` = '$name' WHERE `categorieën`.`idcategorie` = $id;");
+    $id = $_POST["landid"];
+    $name = $_POST["country_name"];
+    $afk = $_POST["country_afkorting"];
+    $update = $db->prepare("UPDATE `landen` SET `landnaam` = '$name', `afkortingnaam` = '$afk' WHERE `landen`.`idland` = $id;");
     $update->execute();
     slep();
 }
 
 function slep() {
-    header("location: categoriecrud.php");
+    header("location: landencrud.php");
 }
 
 // Check if submit btn has been pressed
@@ -85,7 +91,7 @@ if (isset($_POST["wzg_btn"])) {
     connectdb($id);
 }
 else if(isset($_POST["goback"])) {
-    header("location: categoriecrud.php");
+    header("location: landencrud.php");
 }
 
 ?>

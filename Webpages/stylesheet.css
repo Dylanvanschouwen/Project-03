@@ -4,6 +4,7 @@
     padding: 0;
     size: 0;
 }
+
 /* Homepage CCS code -> Jack */
 /* Upper side of homepage -> Jack */
 .home_upper {
@@ -21,7 +22,7 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
-/* Lower side of homepage _> Jack */
+/* Lower side of homepage -> Jack */
 .home_lower {
     height: 40.5vh;
     display: flex;
@@ -60,14 +61,14 @@
 }
 #home_IMGproduct {
     position: absolute;
-    width: 25vw;
+    width: 20vw;
+    height: 34vh;
     background-color: white;
     border: 1px solid #DF0000;
     border-radius: 50px;
     margin-left: 67vw;
     margin-top: 2.3vh;
 }
-
 
 /* Overbedrijf tussen pagina CSS -> Jack */
 #overons_main {
@@ -100,7 +101,6 @@
     margin-top: 1vh;
     margin-bottom: 5vh;
 }
-
 
 /* Eco vriendelijkheid -> Jack */
 #eco_main {
@@ -149,49 +149,28 @@
 
 /* Medewerkers CSS -> Amin */
 #container {
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    height: 20px;
-    margin-top: 300px;
+    display: flex;
+    text-align: center;
+    height: 70px;
+    margin: 30px;
     background: #fff;
 }
-
 .Medewerker_h1{
 display: flex;
 width: 90vw;
 justify-content: center;
 margin-top: 7vw;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-
 }
-#amin{
-   display: absolute;
-   height: 50%;
-   width: 30%;
-   margin-left: 35px;
-   margin-right: 4px;
-   margin-top: 200px;
-}
-#jack{
-    Display: absolute;
-    align-items: center;
-    height: 50%;
-    width: 30%;
-    margin-left: 20px;
-    margin-top: 200px;
+.medewerker{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 500px;
+    flex-direction: row;
+    width: 25vw;
+    height: 40vh;
 }
 
-#dylan{
-    Display: absolute;
-    align-items: center;
-    height: 50%;
-    width: 30%;
-    margin-left: 20px;
-    margin-top: 250px;
-
-}
 /* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
@@ -223,7 +202,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*Retour policy codes -> Dylan */
-
 #RP_main {
     margin-top: 20px;
     margin-left:30px;
@@ -439,13 +417,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 1;
 }
 
-/* Geschiedenis en doelstellingen van bedrijf */
+/* Geschiedenis en doelstellingen van bedrijf -> Dylan */
 #H_main {
     margin-top: 20px;
     margin-left:30px;
 }
 
-/* Product klachten CSS code */
+/* Product klachten CSS code -> Jack */
 .productklacht_form {
     display: flex;
     flex-direction: column;
@@ -521,7 +499,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-/* Landen overzicht CSS code */
+/* Landen overzicht CSS code -> Jack */
 #landenoverzicht_h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -568,7 +546,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Webshop CSS code -> Jack */
-/* Webshop CSS code -> Jack */
 .webshop_main {
     min-height: 78.7vh;
 }
@@ -607,6 +584,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Bestellingen CSS code -> Jack */
+#bestellingen_main {
+    min-height: 78.6vh;
+}
 .bestelling_main_h1 {
     width: 100vw;
     margin-top: 1rem;
@@ -635,6 +615,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black solid 1px;
     padding: 0.5rem;
 }
+
 /*Categorie*/
 .Categorie_Main{
     display: flex;
@@ -642,6 +623,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*leveranciers CSS code -> Dylan */
+.leveranciers_table_div {
 
 #leveranciers-main {
     width: 100vw;
@@ -696,3 +678,104 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
+/* Categorie CRUD CSS code -> Jack */
+.cat_main {
+    min-height: 80.8vh;
+}
+.cat_h1_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#cat_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat_table_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.cat_table {
+    width: 50%;
+    border: black solid 1px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+.cat_table th {
+    background-color: gray;
+    border: black solid 1px;
+    border-collapse: collapse;
+    color: white;
+}
+.cat_table td {
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+.cat_table_btn {
+    width: 100%;
+}
+.cat_table td {
+    background-color: #DD4040;
+    color: white;
+}
+.cat_toevoeg_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#cat_toevoeg_btn {
+    font-size: 20px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Categorieën toevoegen CSS code -> Jack */
+.cat_toe_main {
+    height: 80.9vh;
+}
+.cat_toe_cont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#cat_toe_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#cat_toe_form_cont {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Categorie Wijzig CSS code -> Jack */
+.cat_wzg_h1_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat_wzg_form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.cat_wzg_main {
+    height: 78.6vh;
+}
+#country_toev_goback {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)));
+    background-image: -moz-linear-gradient(center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%); 
+    padding: 3px;
+    border: 1px solid #000;
+    color: black;
+    text-decoration: none;
+}
