@@ -12,7 +12,7 @@ include "../Webpages/include pages/navbar.php";
 
 
 <!-- Main HTML code -->
-<main>
+<main class="cat_wzg_main">
 <div class="cat_wzg_h1_cont">
     <h1>Een categorie wijzigen</h1>
 </div>
