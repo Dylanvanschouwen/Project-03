@@ -20,7 +20,6 @@ include "../Webpages/include pages/navbar.php";
 
 <!-- Main PHP code -->
 <body>
-	<main class="Leveranciers-main">
 		<?php
 
 		function connectdb() {

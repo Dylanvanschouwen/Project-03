@@ -13,28 +13,28 @@ include "../Webpages/include pages/navbar.php";
 <main class= "Websiteklachten-main">
 <html>
 <head>
-	<title>Klachtenformulier</title>
+	<title >Klachtenformulier</title>
 </head>
 <body>
-	<h1>Klachtenformulier</h1>
+	<h1 class="Klachtenform-h1"> Klachtenformulier</h1>
 	<form method="post" action="websiteklachtenform.php">
-		<label>Naam:</label>
+		<label class="websiteklacht-naam" >Naam:</label>
 		<input type="text" name="naam" required>
 		<br><br>
-		<label>Telefoonnummer:</label>
+		<label class="websiteklacht-telefoon" >Telefoonnummer:</label>
 		<input type="tel" name="telefoonnummer" required>
 		<br><br>
-		<label>Postcode:</label>
+		<label class="websiteklacht-postcode" >Postcode:</label>
 		<input type="text" name="postcode" required>
 		<br><br>
-		<label>Geslacht:</label>
+		<label class="websiteklacht-gender" >Geslacht:</label>
 		<input type="radio" name="geslacht" value="M" checked>Man
 		<input type="radio" name="geslacht" value="V">Vrouw
 		<br><br>
-		<label>Wat is uw klacht?</label>
+		<label class="websiteklacht-klacht" >Wat is uw klacht?</label>
 		<textarea name="klacht" rows="5" cols="40" required></textarea>
 		<br><br>
-		<label>Welke wijzigingen wilt u zien?</label>
+		<label class="websiteklacht-wzg" >Welke wijzigingen wilt u zien?</label>
 		<textarea name="wijzigingen" rows="5" cols="40" required></textarea>
 		<br><br>
 		<input type="submit" name="submit" value="Verzenden">

@@ -205,19 +205,25 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #RP_main {
     margin-top: 20px;
     margin-left:30px;
+    min-height:  78.6vh;
 }
 
 .RP_header{
     display:flex;
     margin-right:30px;
     flex-direction: row;
+
 }
 .RPheader_1{
     margin-right:40px;
-    background-color: white;
+    background-color: red;
+    color:white;
+    border: black solid 5px;
 }
 .RPheader_2{
-    background-color: gray;
+    background-color: #DD4040;
+    color:white;
+    border: black solid 5px;
 }
 
 .RP_section1 {
@@ -226,6 +232,24 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right:30px;
     margin-top: 30px;
     justify-content: space-between;    
+}
+
+.RPkop_1{
+    color: white;
+    background-color:#DD4040;
+    border: #DD4040 solid 5px;
+}
+
+.RPkop_2{
+    color: white;
+    background-color:#DD4040;
+    border: #DD4040 solid 5px;
+}
+
+.RPkop_3{
+    color: white;
+    background-color:#DD4040;
+    border: #DD4040 solid 5px;
 }
 
 .RP-rows{
@@ -267,15 +291,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 75px;
 }
 
-.RPdropdown_1 svg {
-    position: relative;
-    display: inline-block;
-    transform: rotate(90deg);
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    transition-property: rotate (90deg);
-}
 
 .RPdropdown_1-content {
     display: none;
@@ -421,6 +436,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #H_main {
     margin-top: 20px;
     margin-left:30px;
+    min-height:80%;
 }
 
 /* Product klachten CSS code -> Jack */
@@ -539,10 +555,35 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* website klachten pagina -> Dylan */
-#websiteklachten-main {
-    width: 100vw;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.Websiteklachten-main {
+    min-height: 81vh;
+    margin-left:30px;
+}
+.Klachtenform-h1{
+background-color: white;
+}
+.websiteklacht-naam{
+    margin-right: 5px;
+    margin-top: 80px;
+}
+.websiteklacht-telefoon{
+    margin-right: 5px;
+}
+
+.websiteklacht-postcode{
+    margin-right: 5px;
+}
+
+.websiteklacht-gender{
+    margin-right: 5px;
+}
+
+.websiteklacht-klacht{
+    margin-right: 5px;
+}
+
+.websiteklacht-wzg{
+    margin-right: 5px;
 }
 
 /* Webshop CSS code -> Jack */
@@ -623,12 +664,15 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*leveranciers CSS code -> Dylan */
-.leveranciers_table_div {
 
 #leveranciers-main {
-    width: 100vw;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    min-height: 79.7vh;
+}
+
+#leveranciers-h1{
+    display:flex;
+    color:black;
+ justify-content: center;
 }
 .leveranciers-table-div {
     width: 80%;
@@ -638,9 +682,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .leveranciers-table{
-    border:red solid 5px;
-    max-width:80%;
-    margin-bottom: 80px;
+    max-width: 100vw;
+    display: flex;
+    background-color: #DD4040;
+    color: white;
+    border-collapse: collapse;
+    border: black solid 1px;
 }
 
 .leveranciers-main-h1 {
