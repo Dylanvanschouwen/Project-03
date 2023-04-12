@@ -61,7 +61,8 @@
 }
 #home_IMGproduct {
     position: absolute;
-    width: 25vw;
+    width: 20vw;
+    height: 34vh;
     background-color: white;
     border: 1px solid #DF0000;
     border-radius: 50px;
@@ -750,6 +751,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Categorieën toevoegen CSS code -> Jack */
+.cat_toe_main {
+    height: 80.9vh;
+}
 .cat_toe_cont {
     width: 100vw;
     display: flex;
@@ -763,4 +767,20 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100vw;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+/* Categorie Wijzig CSS code -> Jack */
+.cat_wzg_h1_cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat_wzg_form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }

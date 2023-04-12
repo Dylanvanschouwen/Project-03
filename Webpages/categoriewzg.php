@@ -13,7 +13,7 @@ include "../Webpages/include pages/navbar.php";
 
 <!-- Main HTML code -->
 <main>
-<div>
+<div class="cat_wzg_h1_cont">
     <h1>Een categorie wijzigen</h1>
 </div>
 
@@ -44,19 +44,19 @@ function getcategory($db, $id) {
 // Print data inside form
 function printform($result, $id) {
     $name = $result[0]["categorienaam"];
-    $form = "<form method='POST'>";
+    $form = "<div class='cat_wzg_form'><form method='POST'>";
 
-    $form .= "<label for='cat_id'>Categorie ID NIET AANPASSEN!</label>";
-    $form .= "<input type=''text' name='cat_id' value='$id'>";
+    $form .= "<p>Categorie ID (Niet aanpasbaar!): $id</p>";
     $form .= "<br>";
 
-    $form .= "<label for='cat_name'>Categorie naam</label>";
+    $form .= "<label for='cat_name'>Categorie naam: </label>";
     $form .= "<input type=''text' name='cat_name' value='$name'>";
-    $form .= "<br>";
+    $form .= "<br><br>";
 
     $form .= "<input type='submit' name='submit_btn' value='Wijzigen'>";
+    $form .= " <input type='submit' name='goback' value='Keer terug'>";
 
-    $form .= "</form>";
+    $form .= "</form></div>";
     echo $form;
 }
 
@@ -82,6 +82,9 @@ if (isset($_POST["submit_btn"])) {
 if (isset($_POST["wzg_btn"])) {
     $id = $_POST["wzg_btn"];
     connectdb($id);
+}
+else if(isset($_POST["goback"])) {
+    header("location: categoriecrud.php");
 }
 
 ?>

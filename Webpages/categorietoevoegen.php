@@ -12,7 +12,7 @@ include "../Webpages/include pages/navbar.php";
 
 
 <!-- Main HTML code -->
-<main>
+<main class="cat_toe_main">
     <div class="cat_toe_cont">
         <h1 id="cat_toe_h1">Nieuwe categorieeën toevoegen!</h1>
     </div>
@@ -24,7 +24,7 @@ include "../Webpages/include pages/navbar.php";
             <input type="text" name="cat_name">
             <br><br>
             <input type="submit" name="submit_btn" value="Categorie Toevoegen">
-            <br>
+            <br><br>
             <input type="submit" name="goback" value="Keer terug">
         </form>
     </div>
