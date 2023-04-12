@@ -12,9 +12,14 @@ include "../Webpages/include pages/navbar.php";
 
 
 <!-- Main HTML code -->
-<main class="cat_toevoeg_main">
-    <div class="cat_toevoeg_h1_container">
-        <h1 id="cat_toevoeg_h1">Categorieën toevoegen</h1>
+<main class="cat_main">
+    <div class="cat_h1_container">
+        <h1 id="cat_h1">Categorieën overzicht</h1>
+    </div>
+    <div class="cat_toevoeg_btn_container">
+        <form action="categorietoevoegen.php">
+            <input type="submit" name="sub" value="Categorie Toevoegen!" id="cat_toevoeg_btn">
+        </form>
     </div>
 
 
@@ -41,13 +46,14 @@ function getdata($db) {
 
 // Universal printable table
 function printdata($result) {
-    $table = "<table border=1px>";
+    $table = "<div class='cat_table_container'><table class='cat_table'>";
 
     $headers = array_keys($result[0]);
     $table .= "<tr>";
     foreach ($headers as $headers) {
         $table .= "<th>" . $headers . "</th>";
     }
+    $table .= "<th></th><th></th>";
     $table .= "</tr>";
 
     foreach ($result as $row) {
@@ -59,20 +65,34 @@ function printdata($result) {
         // CRUD buttons (change/delete)
         $table .= "<td>";
         $table .= "<form method='POST' action='categoriewzg.php'>
-                    <button name='wzg_btn' value='$row[idcategorie]'>Wijzigen</button>
+                    <button class='cat_table_btn' name='wzg_btn' value='$row[idcategorie]'>Wijzigen</button>
                    </form>";
         $table .= "</td>";
         $table .= "<td>";
         $table .= "<form method='POST' action='#'>
-                    <button name='del_btn' value='$row[idcategorie]'>Verwijderen</button>
+                    <button class='cat_table_btn' name='del_btn' value='$row[idcategorie]'>Verwijderen</button>
                    </form>";
         $table .= "</td>";
 
         $table .= "</tr>";
     }
 
-    $table .= "</table>";
+    $table .= "</table></div>";
     echo $table;
+}
+
+
+function deletecat() {
+    $id = $_POST["del_btn"];
+    $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
+
+    $mysqlquery = $db->prepare("DELETE FROM `categorieën` WHERE `categorieën`.`idcategorie` = $id");
+    $mysqlquery->execute();
+    echo"<script type='text/javascript'>alert('Categorie verwijdert!');</script>";
+}
+
+if (isset($_POST["del_btn"])) {
+    deletecat();
 }
 
 $db = connectdb();

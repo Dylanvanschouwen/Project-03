@@ -4,6 +4,7 @@
     padding: 0;
     size: 0;
 }
+
 /* Homepage CCS code -> Jack */
 /* Upper side of homepage -> Jack */
 .home_upper {
@@ -21,7 +22,7 @@
 .home_uppercrap p {
     margin-top: 3vh;
 }
-/* Lower side of homepage _> Jack */
+/* Lower side of homepage -> Jack */
 .home_lower {
     height: 40.5vh;
     display: flex;
@@ -68,7 +69,6 @@
     margin-top: 2.3vh;
 }
 
-
 /* Overbedrijf tussen pagina CSS -> Jack */
 #overons_main {
     min-height: 75.8vh;
@@ -100,7 +100,6 @@
     margin-top: 1vh;
     margin-bottom: 5vh;
 }
-
 
 /* Eco vriendelijkheid -> Jack */
 #eco_main {
@@ -153,16 +152,12 @@
     margin: 30px;
     background: #fff;
 }
-
 .Medewerker_h1{
 display: flex;
 width: 90vw;
 justify-content: center;
 margin-top: 7vw;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-
 }
 #amin {
     display: absolute;
@@ -170,26 +165,18 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 65vh;
     width: 30vw;
     margin-left: 20px;
-    margin-top: 10px; /* decreased from 20px */
- }
- 
- #jack {
-     display: absolute;
-     align-items: center;
-     height: 65vh;
-     width: 30vw;
-     margin-left: 20px;
-     margin-top: 50px; /* decreased from 200px */
- }
- 
- #dylan {
-     display: absolute;
-     align-items: center;
-     height: 65vh;
-     width: 30vw;
-     margin-left: 20px;
-     margin-top: 100px; /* decreased from 250px */
- }
+    margin-top: 200px;
+}
+
+#dylan{
+    Display: absolute;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 250px;
+
+}
 /* Klachten tussen pagina CSS -> Jack */
 #klachtpage_main {
     min-height: 75.8vh;
@@ -221,7 +208,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*Retour policy codes -> Dylan */
-
 #RP_main {
     margin-top: 20px;
     margin-left:30px;
@@ -437,13 +423,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 1;
 }
 
-/* Geschiedenis en doelstellingen van bedrijf */
+/* Geschiedenis en doelstellingen van bedrijf -> Dylan */
 #H_main {
     margin-top: 20px;
     margin-left:30px;
 }
 
-/* Product klachten CSS code */
+/* Product klachten CSS code -> Jack */
 .productklacht_form {
     display: flex;
     flex-direction: column;
@@ -519,7 +505,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-/* Landen overzicht CSS code */
+/* Landen overzicht CSS code -> Jack */
 #landenoverzicht_h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -598,7 +584,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Webshop CSS code -> Jack */
-/* Webshop CSS code -> Jack */
 .webshop_main {
     min-height: 78.7vh;
 }
@@ -637,6 +622,9 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Bestellingen CSS code -> Jack */
+#bestellingen_main {
+    min-height: 78.6vh;
+}
 .bestelling_main_h1 {
     width: 100vw;
     margin-top: 1rem;
@@ -665,9 +653,105 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black solid 1px;
     padding: 0.5rem;
 }
+
 /*Categorie*/
 .Categorie_Main{
     display: flex;
     justify-content: center;
 }
 
+/*leveranciers CSS code -> Dylan */
+.leveranciers_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.leveranciers_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.leveranciers-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#leveranciers-h1 {
+    text-align: center;
+}
+
+/*producten CSS code -> Dylan */
+.producten_table_div {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.producten_table{
+    border:red solid 5px;
+    max-width:80%;
+    margin-bottom: 80px;
+}
+
+.producten-main-h1 {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#producten-h1 {
+    text-align: center;
+}
+
+/* Categorie CRUD CSS code -> Jack */
+.cat_main {
+    min-height: 80.8vh;
+}
+.cat_h1_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#cat_h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cat_table_container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.cat_table {
+    width: 50%;
+    border: black solid 1px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+.cat_table th {
+    background-color: gray;
+    border: black solid 1px;
+    border-collapse: collapse;
+    color: white;
+}
+.cat_table td {
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+.cat_table_btn {
+    width: 100%;
+}
+.cat_table td {
+    background-color: #DD4040;
+    color: white;
+}
+.cat_toevoeg_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#cat_toevoeg_btn {
+    font-size: 20px;
+    height: 2rem;
+    margin-bottom: 1rem;
+}

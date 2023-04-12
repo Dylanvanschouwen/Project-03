@@ -9,7 +9,7 @@
         <ul class="list_boven">
             <li><a href="homepage.php">Homepage</a></li>
             <li><a href="webshop.php">Webshop</a></li>
-            <li><a href="">Leveranciers</a></li>
+            <li><a href="leveranciers.php">Leveranciers</a></li>
             <li><a href="landenoverzicht.php">Landen</a></li>
             <li><a href="Retour policy.php">Bezorgen en retour</a></li>
             <li><a href="klachten.php">Klachten en complimenten</a></li>
@@ -35,7 +35,7 @@
                     <a class="a_btn_1" href="">Klanten bekijken</a>
                     <a class="a_btn" href="">Klanten toevoegen</a>
                     <a class="a_btn" href="bestellingen.php">Bestellingen bekijken</a>
-                    <a class="a_btn" href="categoriecrud.php">Categorieën toevoegen</a>
+                    <a class="a_btn" href="categoriecrud.php">Categorieën overzicht</a>
                     <a class="a_btn_4" href="">Landen toevoegen</a>
                 </div>   
             </li>
