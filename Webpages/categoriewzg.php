@@ -64,10 +64,12 @@ function updatedb() {
     $db = new PDO("mysql:host=localhost;dbname=mediamarkt", "root", "");
     $id = $_POST["cat_id"];
     $name = $_POST["cat_name"];
-    $update = $db("UPDATE categorieën SET categorienaam = $name WHERE idcategorie = $id");
+    $update = $db->prepare("UPDATE `categorieën` SET `categorienaam` = '$name' WHERE `categorieën`.`idcategorie` = $id;");
     $update->execute();
-    sleep(5000);
-    echo "Database is geupdate, u wordt terug gestuurd naar het overzicht.";
+    slep();
+}
+
+function slep() {
     header("location: categoriecrud.php");
 }
 
