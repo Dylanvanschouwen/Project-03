@@ -433,11 +433,15 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Geschiedenis en doelstellingen van bedrijf -> Dylan */
-#H_main {
-    margin-top: 20px;
-    margin-left:30px;
-    min-height:80%;
+
+.geschiedenis-main{
+    margin:20px;
+    min-height: 78.5%;
 }
+.Geschiedenis-doelstellingen-title{
+    background-color: orange;
+}
+
 
 /* Product klachten CSS code -> Jack */
 .productklacht_form {
